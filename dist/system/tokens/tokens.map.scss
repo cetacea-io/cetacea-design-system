@@ -14,26 +14,20 @@ $tokens-map: (
   "color-ucla-gold-lighter": (
     rgb(255, 219, 128),
   ),
-  "color-bleu-de-france-dark": (
-    rgb(16, 112, 209),
-  ),
-  "color-bleu-de-france-light": (
-    rgb(84, 163, 242),
+  "color-neon-blue": (
+    rgb(56, 83, 255),
   ),
   "color-silver": (
     rgb(127, 136, 145),
   ),
+  "color-neon-blue-lighter": (
+    rgb(122, 140, 255),
+  ),
   "color-white": (
     rgb(255, 255, 255),
   ),
-  "color-bleu-de-france": (
-    rgb(37, 138, 239),
-  ),
-  "color-bleu-de-france-darker": (
-    rgb(12, 87, 161),
-  ),
-  "color-bleu-de-france-lighter": (
-    rgb(132, 189, 246),
+  "color-neon-blue-dark": (
+    rgb(0, 30, 224),
   ),
   "color-ucla-gold-dark": (
     rgb(230, 164, 0),
@@ -55,6 +49,12 @@ $tokens-map: (
   ),
   "color-oxford-blue": (
     rgb(0, 38, 77),
+  ),
+  "color-neon-blue-darker": (
+    rgb(0, 23, 173),
+  ),
+  "color-neon-blue-light": (
+    rgb(71, 96, 255),
   ),
   "color-vermilion": (
     rgb(235, 59, 36),
@@ -81,13 +81,13 @@ $tokens-map: (
     11px,
   ),
   "font-heading": (
-    "Fira Sans",
+    "Soleil",
     Helvetica,
     Arial,
     sans-serif,
   ),
   "font-text": (
-    "Fira Sans",
+    "Soleil",
     Helvetica,
     Arial,
     sans-serif,
@@ -154,7 +154,10 @@ $tokens-map: (
     -1px,
   ),
   "radius-default": (
-    3px,
+    10px,
+  ),
+  "radius-rounded": (
+    50px,
   ),
   "radius-circle": (
     50%,

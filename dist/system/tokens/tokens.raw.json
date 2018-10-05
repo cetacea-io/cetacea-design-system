@@ -6,8 +6,8 @@
     "ucla_gold": {
       "value": "43, 100%"
     },
-    "bleu_de_france": {
-      "value": "210, 86%"
+    "neon_blue": {
+      "value": "232, 100%"
     },
     "oxford_blue": {
       "value": "210, 100%"
@@ -55,19 +55,12 @@
       "originalValue": "hsla({!ucla_gold}, 75%, 1)",
       "name": "color_ucla_gold_lighter"
     },
-    "color_bleu_de_france_dark": {
+    "color_neon_blue": {
       "type": "color",
       "category": "color_group_3",
-      "value": "rgb(16, 112, 209)",
-      "originalValue": "hsla({!bleu_de_france}, 44%, 1)",
-      "name": "color_bleu_de_france_dark"
-    },
-    "color_bleu_de_france_light": {
-      "type": "color",
-      "category": "color_group_3",
-      "value": "rgb(84, 163, 242)",
-      "originalValue": "hsla({!bleu_de_france}, 64%, 1)",
-      "name": "color_bleu_de_france_light"
+      "value": "rgb(56, 83, 255)",
+      "originalValue": "hsla({!neon_blue}, 61%, 1)",
+      "name": "color_neon_blue"
     },
     "color_silver": {
       "type": "color",
@@ -76,6 +69,13 @@
       "originalValue": "#7F8891",
       "name": "color_silver"
     },
+    "color_neon_blue_lighter": {
+      "type": "color",
+      "category": "color_group_3",
+      "value": "rgb(122, 140, 255)",
+      "originalValue": "hsla({!neon_blue}, 74%, 1)",
+      "name": "color_neon_blue_lighter"
+    },
     "color_white": {
       "type": "color",
       "category": "color_group_4",
@@ -83,26 +83,12 @@
       "originalValue": "{!white}",
       "name": "color_white"
     },
-    "color_bleu_de_france": {
+    "color_neon_blue_dark": {
       "type": "color",
       "category": "color_group_3",
-      "value": "rgb(37, 138, 239)",
-      "originalValue": "hsla({!bleu_de_france}, 54%, 1)",
-      "name": "color_bleu_de_france"
-    },
-    "color_bleu_de_france_darker": {
-      "type": "color",
-      "category": "color_group_3",
-      "value": "rgb(12, 87, 161)",
-      "originalValue": "hsla({!bleu_de_france}, 34%, 1)",
-      "name": "color_bleu_de_france_darker"
-    },
-    "color_bleu_de_france_lighter": {
-      "type": "color",
-      "category": "color_group_3",
-      "value": "rgb(132, 189, 246)",
-      "originalValue": "hsla({!bleu_de_france}, 74%, 1)",
-      "name": "color_bleu_de_france_lighter"
+      "value": "rgb(0, 30, 224)",
+      "originalValue": "hsla({!neon_blue}, 44%, 1)",
+      "name": "color_neon_blue_dark"
     },
     "color_ucla_gold_dark": {
       "type": "color",
@@ -152,6 +138,20 @@
       "value": "rgb(0, 38, 77)",
       "originalValue": "hsla({!oxford_blue}, 15%, 1)",
       "name": "color_oxford_blue"
+    },
+    "color_neon_blue_darker": {
+      "type": "color",
+      "category": "color_group_3",
+      "value": "rgb(0, 23, 173)",
+      "originalValue": "hsla({!neon_blue}, 34%, 1)",
+      "name": "color_neon_blue_darker"
+    },
+    "color_neon_blue_light": {
+      "type": "color",
+      "category": "color_group_3",
+      "value": "rgb(71, 96, 255)",
+      "originalValue": "hsla({!neon_blue}, 64%, 1)",
+      "name": "color_neon_blue_light"
     },
     "color_vermilion": {
       "type": "color",
@@ -212,15 +212,15 @@
     "font_heading": {
       "type": "...",
       "category": "font",
-      "value": "'Fira Sans', Helvetica, Arial, sans-serif",
-      "originalValue": "'Fira Sans', Helvetica, Arial, sans-serif",
+      "value": "'Soleil', Helvetica, Arial, sans-serif",
+      "originalValue": "'Soleil', Helvetica, Arial, sans-serif",
       "name": "font_heading"
     },
     "font_text": {
       "type": "...",
       "category": "font",
-      "value": "'Fira Sans', Helvetica, Arial, sans-serif",
-      "originalValue": "'Fira Sans', Helvetica, Arial, sans-serif",
+      "value": "'Soleil', Helvetica, Arial, sans-serif",
+      "originalValue": "'Soleil', Helvetica, Arial, sans-serif",
       "name": "font_text"
     },
     "weight_bold": {
@@ -359,9 +359,16 @@
     "radius_default": {
       "type": "number",
       "category": "border-radius",
-      "value": "3px",
-      "originalValue": "3px",
+      "value": "10px",
+      "originalValue": "10px",
       "name": "radius_default"
+    },
+    "radius_rounded": {
+      "type": "number",
+      "category": "border-radius",
+      "value": "50px",
+      "originalValue": "50px",
+      "name": "radius_rounded"
     },
     "radius_circle": {
       "type": "number",
