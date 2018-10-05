@@ -1,15 +1,15 @@
 module.exports = (function(t) {
   var e = {}
-  function n(r) {
-    if (e[r]) return e[r].exports
-    var a = (e[r] = { i: r, l: !1, exports: {} })
-    return t[r].call(a.exports, a, a.exports, n), (a.l = !0), a.exports
+  function n(i) {
+    if (e[i]) return e[i].exports
+    var r = (e[i] = { i: i, l: !1, exports: {} })
+    return t[i].call(r.exports, r, r.exports, n), (r.l = !0), r.exports
   }
   return (
     (n.m = t),
     (n.c = e),
-    (n.d = function(t, e, r) {
-      n.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: r })
+    (n.d = function(t, e, i) {
+      n.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: i })
     }),
     (n.r = function(t) {
       "undefined" != typeof Symbol &&
@@ -20,17 +20,17 @@ module.exports = (function(t) {
     (n.t = function(t, e) {
       if ((1 & e && (t = n(t)), 8 & e)) return t
       if (4 & e && "object" == typeof t && t && t.__esModule) return t
-      var r = Object.create(null)
-      if ((n.r(r), Object.defineProperty(r, "default", { enumerable: !0, value: t }), 2 & e && "string" != typeof t))
-        for (var a in t)
+      var i = Object.create(null)
+      if ((n.r(i), Object.defineProperty(i, "default", { enumerable: !0, value: t }), 2 & e && "string" != typeof t))
+        for (var r in t)
           n.d(
+            i,
             r,
-            a,
             function(e) {
               return t[e]
-            }.bind(null, a)
+            }.bind(null, r)
           )
-      return r
+      return i
     }),
     (n.n = function(t) {
       var e =
@@ -54,7 +54,7 @@ module.exports = (function(t) {
   "/kPn": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var i = {
         name: "Button",
         status: "prototype",
         release: "1.0.0",
@@ -97,11 +97,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("qJZK"), n("KHd+")),
-      i = n("tcIX"),
-      o = n.n(i),
-      s = Object(a.a)(
-        r,
+      r = (n("qJZK"), n("KHd+")),
+      a = n("tcIX"),
+      o = n.n(a),
+      s = Object(r.a)(
+        i,
         function() {
           var t = this,
             e = t.$createElement
@@ -133,16 +133,16 @@ module.exports = (function(t) {
   },
   "0K1V": function(t, e, n) {
     "use strict"
-    var r = n("VOwi")
-    n.n(r).a
+    var i = n("VOwi")
+    n.n(i).a
   },
   "0P7v": function(t, e, n) {},
   "0xPx": function(t, e, n) {},
   "1phr": function(t, e) {},
   "1ulK": function(t, e, n) {
     "use strict"
-    var r = n("0P7v")
-    n.n(r).a
+    var i = n("0P7v")
+    n.n(i).a
   },
   "2dwG": function(t, e) {
     t.exports =
@@ -151,16 +151,16 @@ module.exports = (function(t) {
   "4K1/": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var i = {
         name: "NotFound",
         metaInfo: { title: "Page Not Found | Vue Design System", htmlAttrs: { lang: "en" } },
         props: { type: { type: String, default: "div" } },
       },
-      a = (n("IU6l"), n("KHd+")),
-      i = n("gkHm"),
-      o = n.n(i),
-      s = Object(a.a)(
-        r,
+      r = (n("IU6l"), n("KHd+")),
+      a = n("gkHm"),
+      o = n.n(a),
+      s = Object(r.a)(
+        i,
         function() {
           var t = this,
             e = t.$createElement,
@@ -204,29 +204,30 @@ module.exports = (function(t) {
       )
     "function" == typeof o.a && o()(s), (s.options.__file = "NotFound.vue"), (e.default = s.exports)
   },
+  "5Pm7": function(t, e, n) {},
   "5m5j": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = []
+    var i = []
     ;[n("Xl01"), n("JtIp"), n("c1KM")].forEach(function(t) {
       t.keys().forEach(function(e) {
-        return r.push(t(e).default)
+        return i.push(t(e).default)
       })
     })
-    var a = {
+    var r = {
       install: function(t) {
-        r.forEach(function(e) {
+        i.forEach(function(e) {
           return t.component(e.name, e)
         })
       },
     }
-    "undefined" != typeof window && window.Vue && window.Vue.use(a), (e.default = a)
+    "undefined" != typeof window && window.Vue && window.Vue.use(r), (e.default = r)
   },
   "68yd": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = n("bzL3"),
-      a = {
+    var i = n("bzL3"),
+      r = {
         name: "Icon",
         status: "review",
         release: "1.0.0",
@@ -244,14 +245,14 @@ module.exports = (function(t) {
           },
         },
         data: function() {
-          return { svg: r("./" + this.name + ".svg").replace(/^<svg /, '<svg style="fill: '.concat(this.fill, '" ')) }
+          return { svg: i("./" + this.name + ".svg").replace(/^<svg /, '<svg style="fill: '.concat(this.fill, '" ')) }
         },
       },
-      i = (n("c5QI"), n("KHd+")),
+      a = (n("c5QI"), n("KHd+")),
       o = n("1phr"),
       s = n.n(o),
-      u = Object(i.a)(
-        a,
+      u = Object(a.a)(
+        r,
         function() {
           var t = this,
             e = t.$createElement
@@ -273,17 +274,16 @@ module.exports = (function(t) {
   "7DUr": function(t, e) {},
   "7dOS": function(t, e) {},
   "7kMZ": function(t, e) {},
-  "8P4W": function(t, e, n) {},
   "9I8L": function(t, e) {},
   "9t9y": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = { name: "Wrapper", status: "review", release: "1.0.0", props: { type: { type: String, default: "div" } } },
-      a = (n("frqv"), n("KHd+")),
-      i = n("HpXA"),
-      o = n.n(i),
-      s = Object(a.a)(
-        r,
+    var i = { name: "Wrapper", status: "review", release: "1.0.0", props: { type: { type: String, default: "div" } } },
+      r = (n("frqv"), n("KHd+")),
+      a = n("HpXA"),
+      o = n.n(a),
+      s = Object(r.a)(
+        i,
         function() {
           var t = this.$createElement
           return (this._self._c || t)(this.type, { tag: "component", staticClass: "wrapper" }, [this._t("default")], 2)
@@ -305,7 +305,7 @@ module.exports = (function(t) {
   FmFd: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var i = {
         name: "Paragraph",
         status: "prototype",
         release: "1.0.0",
@@ -326,11 +326,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("jstG"), n("KHd+")),
-      i = n("ECTP"),
-      o = n.n(i),
-      s = Object(a.a)(
-        r,
+      r = (n("jstG"), n("KHd+")),
+      a = n("ECTP"),
+      o = n.n(a),
+      s = Object(r.a)(
+        i,
         function() {
           var t = this,
             e = t.$createElement
@@ -352,36 +352,41 @@ module.exports = (function(t) {
   HpXA: function(t, e) {},
   IU6l: function(t, e, n) {
     "use strict"
-    var r = n("FeAk")
-    n.n(r).a
+    var i = n("FeAk")
+    n.n(i).a
   },
   JtIp: function(t, e, n) {
-    var r = { "./NavBar.vue": "nrZS", "./NewsSlider.vue": "mXHK", "./ProjectCard.vue": "ua5Q" }
-    function a(t) {
-      var e = i(t)
+    var i = {
+      "./NavBar.vue": "nrZS",
+      "./NewsSlider.vue": "mXHK",
+      "./ProjectCard.vue": "ua5Q",
+      "./SwipeSlider.vue": "XPp5",
+    }
+    function r(t) {
+      var e = a(t)
       return n(e)
     }
-    function i(t) {
-      var e = r[t]
+    function a(t) {
+      var e = i[t]
       if (e + 1) return e
       var n = new Error("Cannot find module '" + t + "'")
       throw ((n.code = "MODULE_NOT_FOUND"), n)
     }
-    ;(a.keys = function() {
-      return Object.keys(r)
+    ;(r.keys = function() {
+      return Object.keys(i)
     }),
-      (a.resolve = i),
-      ((t.exports = a).id = "JtIp")
+      (r.resolve = a),
+      ((t.exports = r).id = "JtIp")
   },
   "KHd+": function(t, e, n) {
     "use strict"
-    function r(t, e, n, r, a, i, o, s) {
+    function i(t, e, n, i, r, a, o, s) {
       var u,
-        l = "function" == typeof t ? t.options : t
+        c = "function" == typeof t ? t.options : t
       if (
-        (e && ((l.render = e), (l.staticRenderFns = n), (l._compiled = !0)),
-        r && (l.functional = !0),
-        i && (l._scopeId = "data-v-" + i),
+        (e && ((c.render = e), (c.staticRenderFns = n), (c._compiled = !0)),
+        i && (c.functional = !0),
+        a && (c._scopeId = "data-v-" + a),
         o
           ? ((u = function(t) {
               ;(t =
@@ -390,59 +395,58 @@ module.exports = (function(t) {
                 (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext)) ||
                 "undefined" == typeof __VUE_SSR_CONTEXT__ ||
                 (t = __VUE_SSR_CONTEXT__),
-                a && a.call(this, t),
+                r && r.call(this, t),
                 t && t._registeredComponents && t._registeredComponents.add(o)
             }),
-            (l._ssrRegister = u))
-          : a &&
+            (c._ssrRegister = u))
+          : r &&
             (u = s
               ? function() {
-                  a.call(this, this.$root.$options.shadowRoot)
+                  r.call(this, this.$root.$options.shadowRoot)
                 }
-              : a),
+              : r),
         u)
       )
-        if (l.functional) {
-          l._injectStyles = u
-          var c = l.render
-          l.render = function(t, e) {
-            return u.call(e), c(t, e)
+        if (c.functional) {
+          c._injectStyles = u
+          var l = c.render
+          c.render = function(t, e) {
+            return u.call(e), l(t, e)
           }
         } else {
-          var d = l.beforeCreate
-          l.beforeCreate = d ? [].concat(d, u) : [u]
+          var f = c.beforeCreate
+          c.beforeCreate = f ? [].concat(f, u) : [u]
         }
-      return { exports: t, options: l }
+      return { exports: t, options: c }
     }
     n.d(e, "a", function() {
-      return r
+      return i
     })
-  },
-  KLN6: function(t, e, n) {},
-  KUZg: function(t, e, n) {
-    "use strict"
-    var r = n("8P4W")
-    n.n(r).a
   },
   KzwA: function(t, e, n) {},
   LAKi: function(t, e, n) {
     "use strict"
-    var r = n("a2EW")
-    n.n(r).a
+    var i = n("a2EW")
+    n.n(i).a
   },
   MzIM: function(t, e, n) {},
   Nqnq: function(t, e, n) {},
+  Ohei: function(t, e, n) {
+    "use strict"
+    var i = n("kLRc")
+    n.n(i).a
+  },
   P91N: function(t, e, n) {},
   QOEz: function(t, e, n) {
     "use strict"
-    var r = n("Nqnq")
-    n.n(r).a
+    var i = n("Nqnq")
+    n.n(i).a
   },
   Tof5: function(t, e) {},
   UklV: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var i = {
         name: "Input",
         status: "ready",
         release: "1.0.0",
@@ -490,11 +494,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("QOEz"), n("KHd+")),
-      i = n("7dOS"),
-      o = n.n(i),
-      s = Object(a.a)(
-        r,
+      r = (n("QOEz"), n("KHd+")),
+      a = n("7dOS"),
+      o = n.n(a),
+      s = Object(r.a)(
+        i,
         function() {
           var t = this,
             e = t.$createElement,
@@ -527,8 +531,217 @@ module.exports = (function(t) {
   },
   UvfI: function(t, e, n) {},
   VOwi: function(t, e, n) {},
+  XPp5: function(t, e, n) {
+    "use strict"
+    n.r(e)
+    var i = n("lSNA"),
+      r = n.n(i),
+      a = {
+        name: "SwipeSlider",
+        props: {
+          autoplay: Number,
+          vertical: Boolean,
+          width: { type: Number, default: 0 },
+          height: { type: Number, default: 0 },
+          loop: { type: Boolean, default: !0 },
+          touchable: { type: Boolean, default: !0 },
+          initialSwipe: { type: Number, default: 0 },
+          showIndicators: { type: Boolean, default: !0 },
+          duration: { type: Number, default: 500 },
+        },
+        data: function() {
+          return {
+            computedWidth: 0,
+            computedHeight: 0,
+            offset: 0,
+            active: 0,
+            deltaX: 0,
+            deltaY: 0,
+            swipes: [],
+            swiping: !1,
+          }
+        },
+        mounted: function() {
+          this.initialize(), this.$isServer || on(window, "resize", this.onResize, !0)
+        },
+        destroyed: function() {
+          this.clear(), this.$isServer || off(window, "resize", this.onResize, !0)
+        },
+        watch: {
+          swipes: function() {
+            this.initialize()
+          },
+          initialSwipe: function() {
+            this.initialize()
+          },
+          autoplay: function(t) {
+            t ? this.autoPlay() : this.clear()
+          },
+        },
+        computed: {
+          count: function() {
+            return this.swipes.length
+          },
+          delta: function() {
+            return this.vertical ? this.deltaY : this.deltaX
+          },
+          size: function() {
+            return this[this.vertical ? "computedHeight" : "computedWidth"]
+          },
+          trackSize: function() {
+            return this.count * this.size
+          },
+          activeIndicator: function() {
+            return (this.active + this.count) % this.count
+          },
+          trackStyle: function() {
+            var t
+            return (
+              (t = {}),
+              r()(t, this.vertical ? "height" : "width", "".concat(this.trackSize, "px")),
+              r()(t, "transitionDuration", "".concat(this.swiping ? 0 : this.duration, "ms")),
+              r()(t, "transform", "translate".concat(this.vertical ? "Y" : "X", "(").concat(this.offset, "px)")),
+              t
+            )
+          },
+        },
+        methods: {
+          initialize: function() {
+            var t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : this.initialSwipe
+            if ((clearTimeout(this.timer), this.$el)) {
+              var e = this.$el.getBoundingClientRect()
+              ;(this.computedWidth = this.width || e.width), (this.computedHeight = this.height || e.height)
+            }
+            ;(this.swiping = !0),
+              (this.active = t),
+              (this.offset = 1 < this.count ? -this.size * this.active : 0),
+              this.swipes.forEach(function(t) {
+                t.offset = 0
+              }),
+              this.autoPlay()
+          },
+          onResize: function() {
+            this.initialize(this.activeIndicator)
+          },
+          onTouchStart: function(t) {
+            this.touchable && (this.clear(), (this.swiping = !0), this.touchStart(t), this.correctPosition())
+          },
+          onTouchMove: function(t) {
+            this.touchable &&
+              this.swiping &&
+              (this.touchMove(t),
+              ((this.vertical && "vertical" === this.direction) || "horizontal" === this.direction) &&
+                (t.preventDefault(),
+                t.stopPropagation(),
+                this.move(0, Math.min(Math.max(this.delta, -this.size), this.size))))
+          },
+          onTouchEnd: function() {
+            if (this.touchable && this.swiping) {
+              if (this.delta) {
+                var t = this.vertical ? this.offsetY : this.offsetX
+                this.move(50 < t ? (0 < this.delta ? -1 : 1) : 0)
+              }
+              ;(this.swiping = !1), this.autoPlay()
+            }
+          },
+          move: function() {
+            var t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : 0,
+              e = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : 0,
+              n = this.delta,
+              i = this.active,
+              r = this.count,
+              a = this.swipes,
+              o = this.trackSize,
+              s = 0 === i,
+              u = i === r - 1
+            ;(!this.loop && ((s && (0 < e || t < 0)) || (u && (e < 0 || 0 < t)))) ||
+              r <= 1 ||
+              ((a[0].offset = u && (n < 0 || 0 < t) ? o : 0),
+              (a[r - 1].offset = s && (0 < n || t < 0) ? -o : 0),
+              t && -1 <= i + t && i + t <= r && (this.active += t),
+              (this.offset = e - this.active * this.size))
+          },
+          swipeTo: function(t) {
+            var e = this
+            ;(this.swiping = !0),
+              this.correctPosition(),
+              setTimeout(function() {
+                ;(e.swiping = !1), e.move((t % e.count) - e.active)
+              }, 30)
+          },
+          correctPosition: function() {
+            this.active <= -1 && this.move(this.count), this.active >= this.count && this.move(-this.count)
+          },
+          clear: function() {
+            clearTimeout(this.timer)
+          },
+          autoPlay: function() {
+            var t = this,
+              e = this.autoplay
+            e &&
+              1 < this.count &&
+              (this.clear(),
+              (this.timer = setTimeout(function() {
+                ;(t.swiping = !0),
+                  t.resetTouchStatus(),
+                  t.correctPosition(),
+                  setTimeout(function() {
+                    ;(t.swiping = !1), t.move(1), t.autoPlay()
+                  }, 30)
+              }, e)))
+          },
+        },
+      },
+      o = n("KHd+"),
+      s = n("ZVyw"),
+      u = n.n(s),
+      c = Object(o.a)(
+        a,
+        function() {
+          var t = this,
+            e = t.$createElement,
+            n = t._self._c || e
+          return n("div", { class: t.b() }, [
+            n(
+              "div",
+              {
+                class: t.b("track"),
+                style: t.trackStyle,
+                on: {
+                  touchstart: t.onTouchStart,
+                  touchmove: t.onTouchMove,
+                  touchend: t.onTouchEnd,
+                  touchcancel: t.onTouchEnd,
+                  transitionend: function(e) {
+                    t.$emit("change", t.activeIndicator)
+                  },
+                },
+              },
+              [t._t("default")],
+              2
+            ),
+            t._v(" "),
+            t.showIndicators && 1 < t.count
+              ? n(
+                  "div",
+                  { class: t.b("indicators", { vertical: t.vertical }) },
+                  t._l(t.count, function(e) {
+                    return n("i", { key: e, class: t.b("indicator", { active: e - 1 === t.activeIndicator }) })
+                  })
+                )
+              : t._e(),
+          ])
+        },
+        [],
+        !1,
+        null,
+        null,
+        null
+      )
+    "function" == typeof u.a && u()(c), (c.options.__file = "SwipeSlider.vue"), (e.default = c.exports)
+  },
   Xl01: function(t, e, n) {
-    var r = {
+    var i = {
       "./Button.vue": "/kPn",
       "./Heading.vue": "oIR/",
       "./Icon.vue": "68yd",
@@ -538,36 +751,32 @@ module.exports = (function(t) {
       "./Textarea.vue": "lK0x",
       "./Wrapper.vue": "9t9y",
     }
-    function a(t) {
-      var e = i(t)
+    function r(t) {
+      var e = a(t)
       return n(e)
     }
-    function i(t) {
-      var e = r[t]
+    function a(t) {
+      var e = i[t]
       if (e + 1) return e
       var n = new Error("Cannot find module '" + t + "'")
       throw ((n.code = "MODULE_NOT_FOUND"), n)
     }
-    ;(a.keys = function() {
-      return Object.keys(r)
+    ;(r.keys = function() {
+      return Object.keys(i)
     }),
-      (a.resolve = i),
-      ((t.exports = a).id = "Xl01")
+      (r.resolve = a),
+      ((t.exports = r).id = "Xl01")
   },
   Z0DB: function(t, e, n) {
     "use strict"
-    var r = n("eUC7")
-    n.n(r).a
+    var i = n("eUC7")
+    n.n(i).a
   },
+  ZVyw: function(t, e) {},
   a2EW: function(t, e, n) {},
-  avEL: function(t, e, n) {
-    "use strict"
-    var r = n("KLN6")
-    n.n(r).a
-  },
   bT9U: function(t, e, n) {},
   bzL3: function(t, e, n) {
-    var r = {
+    var i = {
       "./deprecated.svg": "/thn",
       "./heart.svg": "fRY4",
       "./prototype.svg": "2dwG",
@@ -575,44 +784,44 @@ module.exports = (function(t) {
       "./review.svg": "eAtJ",
       "./share.svg": "vVuZ",
     }
-    function a(t) {
-      var e = i(t)
+    function r(t) {
+      var e = a(t)
       return n(e)
     }
-    function i(t) {
-      var e = r[t]
+    function a(t) {
+      var e = i[t]
       if (e + 1) return e
       var n = new Error("Cannot find module '" + t + "'")
       throw ((n.code = "MODULE_NOT_FOUND"), n)
     }
-    ;(a.keys = function() {
-      return Object.keys(r)
+    ;(r.keys = function() {
+      return Object.keys(i)
     }),
-      (a.resolve = i),
-      ((t.exports = a).id = "bzL3")
+      (r.resolve = a),
+      ((t.exports = r).id = "bzL3")
   },
   c1KM: function(t, e, n) {
-    var r = { "./Index.vue": "lF/O", "./NotFound.vue": "4K1/" }
-    function a(t) {
-      var e = i(t)
+    var i = { "./Index.vue": "lF/O", "./NotFound.vue": "4K1/" }
+    function r(t) {
+      var e = a(t)
       return n(e)
     }
-    function i(t) {
-      var e = r[t]
+    function a(t) {
+      var e = i[t]
       if (e + 1) return e
       var n = new Error("Cannot find module '" + t + "'")
       throw ((n.code = "MODULE_NOT_FOUND"), n)
     }
-    ;(a.keys = function() {
-      return Object.keys(r)
+    ;(r.keys = function() {
+      return Object.keys(i)
     }),
-      (a.resolve = i),
-      ((t.exports = a).id = "c1KM")
+      (r.resolve = a),
+      ((t.exports = r).id = "c1KM")
   },
   c5QI: function(t, e, n) {
     "use strict"
-    var r = n("KzwA")
-    n.n(r).a
+    var i = n("KzwA")
+    n.n(i).a
   },
   dtxr: function(t, e) {},
   eAtJ: function(t, e) {
@@ -626,35 +835,41 @@ module.exports = (function(t) {
   },
   frqv: function(t, e, n) {
     "use strict"
-    var r = n("UvfI")
-    n.n(r).a
+    var i = n("UvfI")
+    n.n(i).a
   },
   gkHm: function(t, e) {},
+  hHbo: function(t, e, n) {
+    "use strict"
+    var i = n("5Pm7")
+    n.n(i).a
+  },
   jstG: function(t, e, n) {
     "use strict"
-    var r = n("0xPx")
-    n.n(r).a
+    var i = n("0xPx")
+    n.n(i).a
   },
+  kLRc: function(t, e, n) {},
   kWgB: function(t, e, n) {
     "use strict"
-    var r = n("bT9U")
-    n.n(r).a
+    var i = n("bT9U")
+    n.n(i).a
   },
   "lF/O": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var i = {
         name: "Index",
         status: "deprecated",
         release: "1.0.0",
         metaInfo: { title: "Vue Design System", htmlAttrs: { lang: "en" } },
         props: { type: { type: String, default: "div" } },
       },
-      a = (n("0K1V"), n("KHd+")),
-      i = n("9I8L"),
-      o = n.n(i),
-      s = Object(a.a)(
-        r,
+      r = (n("0K1V"), n("KHd+")),
+      a = n("9I8L"),
+      o = n.n(a),
+      s = Object(r.a)(
+        i,
         function() {
           var t = this,
             e = t.$createElement,
@@ -702,7 +917,7 @@ module.exports = (function(t) {
   lK0x: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var i = {
         name: "Textarea",
         status: "ready",
         release: "1.0.0",
@@ -743,11 +958,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("qQO5"), n("KHd+")),
-      i = n("7DUr"),
-      o = n.n(i),
-      s = Object(a.a)(
-        r,
+      r = (n("qQO5"), n("KHd+")),
+      a = n("7DUr"),
+      o = n.n(a),
+      s = Object(r.a)(
+        i,
         function() {
           var t = this,
             e = t.$createElement,
@@ -784,10 +999,18 @@ module.exports = (function(t) {
       )
     "function" == typeof o.a && o()(s), (s.options.__file = "Textarea.vue"), (e.default = s.exports)
   },
+  lSNA: function(t, e) {
+    t.exports = function(t, e, n) {
+      return (
+        e in t ? Object.defineProperty(t, e, { value: n, enumerable: !0, configurable: !0, writable: !0 }) : (t[e] = n),
+        t
+      )
+    }
+  },
   mXHK: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var i = {
         name: "NewsSlider",
         status: "review",
         release: "1.0.0",
@@ -810,11 +1033,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("1ulK"), n("LAKi"), n("KHd+")),
-      i = n("dtxr"),
-      o = n.n(i),
-      s = Object(a.a)(
-        r,
+      r = (n("1ulK"), n("LAKi"), n("KHd+")),
+      a = n("dtxr"),
+      o = n.n(a),
+      s = Object(r.a)(
+        i,
         function() {
           var t = this,
             e = t.$createElement,
@@ -858,13 +1081,13 @@ module.exports = (function(t) {
   },
   nZfC: function(t, e, n) {
     "use strict"
-    var r = n("oXgq")
-    n.n(r).a
+    var i = n("oXgq")
+    n.n(i).a
   },
   nrZS: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var i = {
         name: "NavBar",
         status: "ready",
         release: "1.0.0",
@@ -885,11 +1108,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("kWgB"), n("KHd+")),
-      i = n("Tof5"),
-      o = n.n(i),
-      s = Object(a.a)(
-        r,
+      r = (n("kWgB"), n("KHd+")),
+      a = n("Tof5"),
+      o = n.n(a),
+      s = Object(r.a)(
+        i,
         function() {
           var t = this,
             e = t.$createElement,
@@ -897,9 +1120,9 @@ module.exports = (function(t) {
           return n(
             t.type,
             { tag: "component", staticClass: "nav" },
-            t._l(t.navItems, function(e, r) {
+            t._l(t.navItems, function(e, i) {
               return n("a", {
-                key: r,
+                key: i,
                 class: { active: t.localActive === e.component },
                 attrs: { href: e.href },
                 domProps: { innerHTML: t._s(e.name) },
@@ -918,7 +1141,7 @@ module.exports = (function(t) {
   "oIR/": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var i = {
         name: "Heading",
         status: "prototype",
         release: "1.0.0",
@@ -932,11 +1155,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("Z0DB"), n("KHd+")),
-      i = n("woMB"),
-      o = n.n(i),
-      s = Object(a.a)(
-        r,
+      r = (n("Z0DB"), n("KHd+")),
+      a = n("woMB"),
+      o = n.n(a),
+      s = Object(r.a)(
+        i,
         function() {
           var t = this.$createElement
           return (this._self._c || t)(this.level, { tag: "component", staticClass: "heading" }, [this._t("default")], 2)
@@ -952,18 +1175,18 @@ module.exports = (function(t) {
   oXgq: function(t, e, n) {},
   qJZK: function(t, e, n) {
     "use strict"
-    var r = n("MzIM")
-    n.n(r).a
+    var i = n("MzIM")
+    n.n(i).a
   },
   qQO5: function(t, e, n) {
     "use strict"
-    var r = n("P91N")
-    n.n(r).a
+    var i = n("P91N")
+    n.n(i).a
   },
   r6ov: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var i = {
         name: "TextStyle",
         status: "ready",
         release: "1.0.0",
@@ -984,11 +1207,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("nZfC"), n("KHd+")),
-      i = n("7kMZ"),
-      o = n.n(i),
-      s = Object(a.a)(
-        r,
+      r = (n("nZfC"), n("KHd+")),
+      a = n("7kMZ"),
+      o = n.n(a),
+      s = Object(r.a)(
+        i,
         function() {
           var t = this,
             e = t.$createElement
@@ -1011,7 +1234,7 @@ module.exports = (function(t) {
   ua5Q: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var i = {
         name: "ProjectCard",
         status: "review",
         release: "1.0.0",
@@ -1034,87 +1257,78 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("KUZg"), n("avEL"), n("KHd+")),
-      i = n("/WLx"),
-      o = n.n(i),
-      s = Object(a.a)(
-        r,
+      r = (n("hHbo"), n("Ohei"), n("KHd+")),
+      a = n("/WLx"),
+      o = n.n(a),
+      s = Object(r.a)(
+        i,
         function() {
           var t = this,
             e = t.$createElement,
             n = t._self._c || e
-          return n(
-            t.type,
-            { tag: "component", staticClass: "card", on: { mouseover: t.mouseOver } },
-            [
-              n(
-                "div",
-                { staticClass: "share" },
-                [
-                  n("Icon", { attrs: { name: "share", size: "small", fill: "rgb(255,255,255)" } }),
-                  n("span", { staticClass: "no-of-shares" }, [t._v(t._s(t.shares))]),
-                ],
-                1
-              ),
-              t._v(" "),
-              n(
-                "div",
-                { staticClass: "like" },
-                [
-                  n("Icon", { attrs: { name: "heart", size: "small", fill: "rgb(255,255,255)" } }),
-                  n("span", { staticClass: "no-of-likes" }, [t._v(t._s(t.likes))]),
-                ],
-                1
-              ),
-              t._v(" "),
-              n("nuxt-link", { attrs: { to: t.route } }, [
-                n("div", { staticClass: "card-wrapper" }, [
-                  n("div", { staticClass: "image", style: { "background-image": "url(" + t.image + ")" } }, [
-                    n("div", { staticClass: "image-hover" }),
-                    t._v(" "),
-                    t.location
-                      ? n("div", { staticClass: "location" }, [
-                          n("i", { staticClass: "fas fa-map-marker-alt" }),
-                          t._v(" " + t._s(t.location) + "\n          "),
-                        ])
-                      : t._e(),
-                  ]),
-                  t._v(" "),
-                  n("div", { staticClass: "content" }, [
-                    n("div", { staticClass: "title" }, [t._v("\n            " + t._s(t.title) + "\n          ")]),
-                    t._v(" "),
-                    n("div", { staticClass: "meta" }, [
-                      n("i", { staticClass: "fas fa-film" }),
-                      t._v(t._s(t.category) + "\n            "),
-                    ]),
-                    t._v(" "),
-                    n("div", { staticClass: "description" }, [
-                      n("div", {
-                        staticStyle: {
-                          position: "absolute",
-                          width: "100%",
-                          height: "60%",
-                          background: "linear-gradient(rgba(255, 255, 255, 0), #ffffff)",
-                          bottom: "0",
-                        },
-                      }),
-                      t._v("\n            " + t._s(t.shortDescription) + "\n          "),
-                    ]),
-                    t._v(" "),
-                    n("div", { staticClass: "extra" }, [
-                      n("div", { staticClass: "cetaceans" }, [n("AppAvatarList")], 1),
-                    ]),
-                  ]),
-                ]),
+          return n(t.type, { tag: "component", staticClass: "card", on: { mouseover: t.mouseOver } }, [
+            n(
+              "div",
+              { staticClass: "share" },
+              [
+                n("Icon", { attrs: { name: "share", size: "small", fill: "rgb(255,255,255)" } }),
+                n("span", { staticClass: "no-of-shares" }, [t._v(t._s(t.shares))]),
+              ],
+              1
+            ),
+            t._v(" "),
+            n(
+              "div",
+              { staticClass: "like" },
+              [
+                n("Icon", { attrs: { name: "heart", size: "small", fill: "rgb(255,255,255)" } }),
+                n("span", { staticClass: "no-of-likes" }, [t._v(t._s(t.likes))]),
+              ],
+              1
+            ),
+            t._v(" "),
+            n("div", { staticClass: "card-wrapper" }, [
+              n("div", { staticClass: "image", style: { "background-image": "url(" + t.image + ")" } }, [
+                n("div", { staticClass: "image-hover" }),
+                t._v(" "),
+                t.location
+                  ? n("div", { staticClass: "location" }, [
+                      n("i", { staticClass: "fas fa-map-marker-alt" }),
+                      t._v(" " + t._s(t.location) + "\n          "),
+                    ])
+                  : t._e(),
               ]),
-            ],
-            1
-          )
+              t._v(" "),
+              n("div", { staticClass: "content" }, [
+                n("div", { staticClass: "title" }, [t._v("\n            " + t._s(t.title) + "\n          ")]),
+                t._v(" "),
+                n("div", { staticClass: "meta" }, [
+                  n("i", { staticClass: "fas fa-film" }),
+                  t._v(t._s(t.category) + "\n            "),
+                ]),
+                t._v(" "),
+                n("div", { staticClass: "description" }, [
+                  n("div", {
+                    staticStyle: {
+                      position: "absolute",
+                      width: "100%",
+                      height: "60%",
+                      background: "linear-gradient(rgba(255, 255, 255, 0), #ffffff)",
+                      bottom: "0",
+                    },
+                  }),
+                  t._v("\n            " + t._s(t.shortDescription) + "\n          "),
+                ]),
+                t._v(" "),
+                n("div", { staticClass: "extra" }, [n("div", { staticClass: "cetaceans" }, [n("AppAvatarList")], 1)]),
+              ]),
+            ]),
+          ])
         },
         [],
         !1,
         null,
-        "60942784",
+        "1953889e",
         null
       )
     "function" == typeof o.a && o()(s), (s.options.__file = "ProjectCard.vue"), (e.default = s.exports)
