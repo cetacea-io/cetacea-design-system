@@ -12,7 +12,7 @@
         <Icon name="heart" size="small" fill="rgb(255,255,255)" /><span class="no-of-likes">{{ likes }}</span>
       </div>
 
-      <nuxt-link :to="route">
+      <!-- <nuxt-link :to="route"> -->
 
         <div class="card-wrapper">
           <div
@@ -54,7 +54,7 @@
           </div>
         </div>
 
-      </nuxt-link>
+      <!-- </nuxt-link> -->
 
   </component>
 </template>
