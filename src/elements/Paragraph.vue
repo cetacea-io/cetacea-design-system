@@ -48,10 +48,10 @@ export default {
   line-height: $line-height-m;
   color: shade($color-silver, 70%);
   a {
-    color: $color-bleu-de-france;
+    color: $color-neon-blue;
     text-decoration: none;
     &:hover {
-      color: darken($color-bleu-de-france, 20%);
+      color: darken($color-neon-blue, 20%);
     }
   }
   &.intro {

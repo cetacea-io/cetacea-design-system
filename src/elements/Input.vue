@@ -172,7 +172,7 @@ $color-placeholder: tint($color-silver, 50%);
     &:focus,
     &.focus {
       transition: box-shadow 0.2s ease;
-      box-shadow: inset 0 0 0 1px $color-bleu-de-france, 0 0 0 1px $color-bleu-de-france;
+      box-shadow: inset 0 0 0 1px $color-neon-blue, 0 0 0 1px $color-neon-blue;
       outline: 0;
     }
     &[disabled] {

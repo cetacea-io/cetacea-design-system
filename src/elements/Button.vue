@@ -92,7 +92,7 @@ export default {
   transition: all 0.2s ease;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: $weight-semi-bold;
+  font-weight: $weight-normal;
   font-size: $size-m;
   font-family: $font-text;
   line-height: $line-height-m;
@@ -101,21 +101,21 @@ export default {
   align-items: center;
   justify-content: center;
   border: 0;
-  box-shadow: inset 0 0 0 2px $color-bleu-de-france;
-  border-radius: $radius-default;
-  background: transparent;
-  color: $color-bleu-de-france;
+  box-shadow: inset 0 0 0 2px $color-neon-blue;
+  border-radius: $radius-rounded;
+  background: $color-neon-blue;
+  color: $color-white;
   cursor: pointer;
   &:hover,
   &.hover {
     color: $color-white;
-    background: $color-bleu-de-france;
+    background: $color-neon-blue;
     transform: translateZ(0) scale(1.03);
   }
   &:active,
   &.active {
     transition: none;
-    background: $color-bleu-de-france-dark;
+    background: $color-neon-blue-dark;
     box-shadow: none;
     color: $color-white;
     transform: translateZ(0) scale(1);
@@ -123,7 +123,7 @@ export default {
 
   &:focus,
   &.focus {
-    background: $color-bleu-de-france-darker;
+    background: $color-neon-blue-darker;
     box-shadow: none;
     color: $color-white;
     transform: translateZ(0) scale(1);
@@ -134,7 +134,7 @@ export default {
   .icon {
     float: right;
     margin: -#{$space-xs} -#{$space-xs} -#{$space-s} $space-xs/2;
-    color: $color-bleu-de-france;
+    color: $color-neon-blue;
   }
 
   // Various button sizes
@@ -153,16 +153,16 @@ export default {
 
   // Primary button
   &.primary {
-    background: $color-bleu-de-france;
+    background: $color-neon-blue;
     color: $color-white;
     box-shadow: none;
     &:hover,
     &.hover {
-      background-color: shade($color-bleu-de-france, 12%);
+      background-color: shade($color-neon-blue, 12%);
     }
     &:active,
     &.active {
-      background-color: shade($color-bleu-de-france, 20%);
+      background-color: shade($color-neon-blue, 20%);
       transition: none;
     }
     &:focus {

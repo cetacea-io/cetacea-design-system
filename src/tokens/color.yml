@@ -12,8 +12,8 @@ aliases:
     value: "7, 83%"
   ucla_gold:
     value: "43, 100%"
-  bleu_de_france:
-    value: "210, 86%"
+  neon_blue:
+    value: "232, 100%"
   oxford_blue:
     value: "210, 100%"
   rich_black:
@@ -53,20 +53,20 @@ props:
     value: "hsla({!ucla_gold}, 75%, 1)"
     category: color_group_2
 
-  color_bleu_de_france_darker:
-    value: "hsla({!bleu_de_france}, 34%, 1)"
+  color_neon_blue_darker:
+    value: "hsla({!neon_blue}, 34%, 1)"
     category: color_group_3
-  color_bleu_de_france_dark:
-    value: "hsla({!bleu_de_france}, 44%, 1)"
+  color_neon_blue_dark:
+    value: "hsla({!neon_blue}, 44%, 1)"
     category: color_group_3
-  color_bleu_de_france:
-    value: "hsla({!bleu_de_france}, 54%, 1)"
+  color_neon_blue:
+    value: "hsla({!neon_blue}, 61%, 1)"
     category: color_group_3
-  color_bleu_de_france_light:
-    value: "hsla({!bleu_de_france}, 64%, 1)"
+  color_neon_blue_light:
+    value: "hsla({!neon_blue}, 64%, 1)"
     category: color_group_3
-  color_bleu_de_france_lighter:
-    value: "hsla({!bleu_de_france}, 74%, 1)"
+  color_neon_blue_lighter:
+    value: "hsla({!neon_blue}, 74%, 1)"
     category: color_group_3
 
   color_oxford_blue:
