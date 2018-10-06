@@ -2,8 +2,8 @@ module.exports = (function(t) {
   var e = {}
   function n(i) {
     if (e[i]) return e[i].exports
-    var r = (e[i] = { i: i, l: !1, exports: {} })
-    return t[i].call(r.exports, r, r.exports, n), (r.l = !0), r.exports
+    var a = (e[i] = { i: i, l: !1, exports: {} })
+    return t[i].call(a.exports, a, a.exports, n), (a.l = !0), a.exports
   }
   return (
     (n.m = t),
@@ -22,13 +22,13 @@ module.exports = (function(t) {
       if (4 & e && "object" == typeof t && t && t.__esModule) return t
       var i = Object.create(null)
       if ((n.r(i), Object.defineProperty(i, "default", { enumerable: !0, value: t }), 2 & e && "string" != typeof t))
-        for (var r in t)
+        for (var a in t)
           n.d(
             i,
-            r,
+            a,
             function(e) {
               return t[e]
-            }.bind(null, r)
+            }.bind(null, a)
           )
       return i
     }),
@@ -50,6 +50,53 @@ module.exports = (function(t) {
     n((n.s = 0))
   )
 })({
+  "+BkN": function(t, e, n) {
+    "use strict"
+    n.r(e)
+    var i = {
+        name: "Avatar",
+        status: "prototype",
+        release: "1.0.0",
+        props: {
+          type: { type: String, default: "div" },
+          image: { type: String, required: !1, default: "" },
+          number: { type: Number, required: !1, default: null },
+          icon: { type: Boolean, required: !1, default: !1 },
+          size: { type: String, required: !1, default: "large" },
+        },
+        computed: {
+          getSize: function() {
+            return this.icon ? "is-icon" : "is-".concat(this.size)
+          },
+        },
+      },
+      a = (n("N8dR"), n("KHd+")),
+      r = n("VqCz"),
+      o = n.n(r),
+      s = Object(a.a)(
+        i,
+        function() {
+          var t = this,
+            e = t.$createElement
+          return (t._self._c || e)(
+            t.type,
+            {
+              tag: "component",
+              staticClass: "avatar",
+              class: t.getSize,
+              style: { "background-image": "url(" + t.image + ")" },
+            },
+            [t._v("\n  " + t._s(t.number) + "\n")]
+          )
+        },
+        [],
+        !1,
+        null,
+        "1e1be353",
+        null
+      )
+    "function" == typeof o.a && o()(s), (s.options.__file = "Avatar.vue"), (e.default = s.exports)
+  },
   "/WLx": function(t, e) {},
   "/kPn": function(t, e, n) {
     "use strict"
@@ -97,10 +144,10 @@ module.exports = (function(t) {
           },
         },
       },
-      r = (n("qJZK"), n("KHd+")),
-      a = n("tcIX"),
-      o = n.n(a),
-      s = Object(r.a)(
+      a = (n("qJZK"), n("KHd+")),
+      r = n("tcIX"),
+      o = n.n(r),
+      s = Object(a.a)(
         i,
         function() {
           var t = this,
@@ -136,14 +183,8 @@ module.exports = (function(t) {
     var i = n("VOwi")
     n.n(i).a
   },
-  "0P7v": function(t, e, n) {},
   "0xPx": function(t, e, n) {},
   "1phr": function(t, e) {},
-  "1ulK": function(t, e, n) {
-    "use strict"
-    var i = n("0P7v")
-    n.n(i).a
-  },
   "2dwG": function(t, e) {
     t.exports =
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zM238.1 177.9L102.4 313.6l-6.3 57.1c-.8 7.6 5.6 14.1 13.3 13.3l57.1-6.3L302.2 242c2.3-2.3 2.3-6.1 0-8.5L246.7 178c-2.5-2.4-6.3-2.4-8.6-.1zM345 165.1L314.9 135c-9.4-9.4-24.6-9.4-33.9 0l-23.1 23.1c-2.3 2.3-2.3 6.1 0 8.5l55.5 55.5c2.3 2.3 6.1 2.3 8.5 0L345 199c9.3-9.3 9.3-24.5 0-33.9z"/></svg>'
@@ -156,10 +197,10 @@ module.exports = (function(t) {
         metaInfo: { title: "Page Not Found | Vue Design System", htmlAttrs: { lang: "en" } },
         props: { type: { type: String, default: "div" } },
       },
-      r = (n("IU6l"), n("KHd+")),
-      a = n("gkHm"),
-      o = n.n(a),
-      s = Object(r.a)(
+      a = (n("IU6l"), n("KHd+")),
+      r = n("gkHm"),
+      o = n.n(r),
+      s = Object(a.a)(
         i,
         function() {
           var t = this,
@@ -204,7 +245,6 @@ module.exports = (function(t) {
       )
     "function" == typeof o.a && o()(s), (s.options.__file = "NotFound.vue"), (e.default = s.exports)
   },
-  "5Pm7": function(t, e, n) {},
   "5m5j": function(t, e, n) {
     "use strict"
     n.r(e)
@@ -214,20 +254,20 @@ module.exports = (function(t) {
         return i.push(t(e).default)
       })
     })
-    var r = {
+    var a = {
       install: function(t) {
         i.forEach(function(e) {
           return t.component(e.name, e)
         })
       },
     }
-    "undefined" != typeof window && window.Vue && window.Vue.use(r), (e.default = r)
+    "undefined" != typeof window && window.Vue && window.Vue.use(a), (e.default = a)
   },
   "68yd": function(t, e, n) {
     "use strict"
     n.r(e)
     var i = n("bzL3"),
-      r = {
+      a = {
         name: "Icon",
         status: "review",
         release: "1.0.0",
@@ -248,11 +288,11 @@ module.exports = (function(t) {
           return { svg: i("./" + this.name + ".svg").replace(/^<svg /, '<svg style="fill: '.concat(this.fill, '" ')) }
         },
       },
-      a = (n("c5QI"), n("KHd+")),
+      r = (n("c5QI"), n("KHd+")),
       o = n("1phr"),
       s = n.n(o),
-      u = Object(a.a)(
-        r,
+      u = Object(r.a)(
+        a,
         function() {
           var t = this,
             e = t.$createElement
@@ -279,10 +319,10 @@ module.exports = (function(t) {
     "use strict"
     n.r(e)
     var i = { name: "Wrapper", status: "review", release: "1.0.0", props: { type: { type: String, default: "div" } } },
-      r = (n("frqv"), n("KHd+")),
-      a = n("HpXA"),
-      o = n.n(a),
-      s = Object(r.a)(
+      a = (n("frqv"), n("KHd+")),
+      r = n("HpXA"),
+      o = n.n(r),
+      s = Object(a.a)(
         i,
         function() {
           var t = this.$createElement
@@ -299,6 +339,62 @@ module.exports = (function(t) {
   AAsE: function(t, e) {
     t.exports =
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" class="st1"/></svg>'
+  },
+  AMP2: function(t, e, n) {},
+  BazK: function(t, e, n) {
+    "use strict"
+    n.r(e)
+    var i = {
+        name: "AvatarList",
+        status: "prototype",
+        release: "1.0.0",
+        props: {
+          type: { type: String, default: "div" },
+          img: { type: String, required: !1, default: "" },
+          number: { type: String, required: !1, default: "" },
+        },
+      },
+      a = (n("kBK6"), n("KHd+")),
+      r = n("RUJA"),
+      o = n.n(r),
+      s = Object(a.a)(
+        i,
+        function() {
+          var t = this,
+            e = t.$createElement,
+            n = t._self._c || e
+          return n(
+            t.type,
+            { tag: "component" },
+            [
+              n("Avatar", {
+                attrs: {
+                  icon: "",
+                  image:
+                    "https://instagram.fntr3-1.fna.fbcdn.net/vp/45a0e2ca198d91b96076d37f8805ab1d/5C45615D/t51.2885-15/e35/41784399_2426890347336146_1249994690766315933_n.jpg",
+                },
+              }),
+              t._v(" "),
+              n("Avatar", {
+                attrs: {
+                  icon: "",
+                  image:
+                    "https://instagram.fntr3-1.fna.fbcdn.net/vp/433d763b711ab7bc09c2843bd2b35001/5BC429AF/t51.2885-15/e35/27894011_542593912800477_5623809282366504960_n.jpg",
+                },
+              }),
+              t._v(" "),
+              n("Avatar", { attrs: { icon: "", number: "+12" } }),
+            ],
+            1
+          )
+        },
+        [],
+        !1,
+        null,
+        "5cbd8831",
+        null
+      )
+    "function" == typeof o.a && o()(s), (s.options.__file = "AvatarList.vue"), (e.default = s.exports)
   },
   ECTP: function(t, e) {},
   FeAk: function(t, e, n) {},
@@ -326,10 +422,10 @@ module.exports = (function(t) {
           },
         },
       },
-      r = (n("jstG"), n("KHd+")),
-      a = n("ECTP"),
-      o = n.n(a),
-      s = Object(r.a)(
+      a = (n("jstG"), n("KHd+")),
+      r = n("ECTP"),
+      o = n.n(r),
+      s = Object(a.a)(
         i,
         function() {
           var t = this,
@@ -355,38 +451,40 @@ module.exports = (function(t) {
     var i = n("FeAk")
     n.n(i).a
   },
+  JfE0: function(t, e, n) {},
   JtIp: function(t, e, n) {
     var i = {
+      "./AvatarList.vue": "BazK",
       "./NavBar.vue": "nrZS",
       "./NewsSlider.vue": "mXHK",
       "./ProjectCard.vue": "ua5Q",
       "./SwipeSlider.vue": "XPp5",
     }
-    function r(t) {
-      var e = a(t)
+    function a(t) {
+      var e = r(t)
       return n(e)
     }
-    function a(t) {
+    function r(t) {
       var e = i[t]
       if (e + 1) return e
       var n = new Error("Cannot find module '" + t + "'")
       throw ((n.code = "MODULE_NOT_FOUND"), n)
     }
-    ;(r.keys = function() {
+    ;(a.keys = function() {
       return Object.keys(i)
     }),
-      (r.resolve = a),
-      ((t.exports = r).id = "JtIp")
+      (a.resolve = r),
+      ((t.exports = a).id = "JtIp")
   },
   "KHd+": function(t, e, n) {
     "use strict"
-    function i(t, e, n, i, r, a, o, s) {
+    function i(t, e, n, i, a, r, o, s) {
       var u,
         c = "function" == typeof t ? t.options : t
       if (
         (e && ((c.render = e), (c.staticRenderFns = n), (c._compiled = !0)),
         i && (c.functional = !0),
-        a && (c._scopeId = "data-v-" + a),
+        r && (c._scopeId = "data-v-" + r),
         o
           ? ((u = function(t) {
               ;(t =
@@ -395,16 +493,16 @@ module.exports = (function(t) {
                 (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext)) ||
                 "undefined" == typeof __VUE_SSR_CONTEXT__ ||
                 (t = __VUE_SSR_CONTEXT__),
-                r && r.call(this, t),
+                a && a.call(this, t),
                 t && t._registeredComponents && t._registeredComponents.add(o)
             }),
             (c._ssrRegister = u))
-          : r &&
+          : a &&
             (u = s
               ? function() {
-                  r.call(this, this.$root.$options.shadowRoot)
+                  a.call(this, this.$root.$options.shadowRoot)
                 }
-              : r),
+              : a),
         u)
       )
         if (c.functional) {
@@ -423,25 +521,27 @@ module.exports = (function(t) {
       return i
     })
   },
+  Kboc: function(t, e, n) {},
   KzwA: function(t, e, n) {},
-  LAKi: function(t, e, n) {
+  LzOt: function(t, e, n) {
     "use strict"
-    var i = n("a2EW")
+    var i = n("cD1p")
     n.n(i).a
   },
   MzIM: function(t, e, n) {},
-  Nqnq: function(t, e, n) {},
-  Ohei: function(t, e, n) {
+  N8dR: function(t, e, n) {
     "use strict"
-    var i = n("kLRc")
+    var i = n("qeai")
     n.n(i).a
   },
+  Nqnq: function(t, e, n) {},
   P91N: function(t, e, n) {},
   QOEz: function(t, e, n) {
     "use strict"
     var i = n("Nqnq")
     n.n(i).a
   },
+  RUJA: function(t, e) {},
   Tof5: function(t, e) {},
   UklV: function(t, e, n) {
     "use strict"
@@ -494,10 +594,10 @@ module.exports = (function(t) {
           },
         },
       },
-      r = (n("QOEz"), n("KHd+")),
-      a = n("7dOS"),
-      o = n.n(a),
-      s = Object(r.a)(
+      a = (n("QOEz"), n("KHd+")),
+      r = n("7dOS"),
+      o = n.n(r),
+      s = Object(a.a)(
         i,
         function() {
           var t = this,
@@ -531,12 +631,18 @@ module.exports = (function(t) {
   },
   UvfI: function(t, e, n) {},
   VOwi: function(t, e, n) {},
+  VmAo: function(t, e, n) {
+    "use strict"
+    var i = n("AMP2")
+    n.n(i).a
+  },
+  VqCz: function(t, e) {},
   XPp5: function(t, e, n) {
     "use strict"
     n.r(e)
     var i = n("lSNA"),
-      r = n.n(i),
-      a = {
+      a = n.n(i),
+      r = {
         name: "SwipeSlider",
         props: {
           autoplay: Number,
@@ -598,9 +704,9 @@ module.exports = (function(t) {
             var t
             return (
               (t = {}),
-              r()(t, this.vertical ? "height" : "width", "".concat(this.trackSize, "px")),
-              r()(t, "transitionDuration", "".concat(this.swiping ? 0 : this.duration, "ms")),
-              r()(t, "transform", "translate".concat(this.vertical ? "Y" : "X", "(").concat(this.offset, "px)")),
+              a()(t, this.vertical ? "height" : "width", "".concat(this.trackSize, "px")),
+              a()(t, "transitionDuration", "".concat(this.swiping ? 0 : this.duration, "ms")),
+              a()(t, "transform", "translate".concat(this.vertical ? "Y" : "X", "(").concat(this.offset, "px)")),
               t
             )
           },
@@ -649,16 +755,16 @@ module.exports = (function(t) {
               e = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : 0,
               n = this.delta,
               i = this.active,
-              r = this.count,
-              a = this.swipes,
+              a = this.count,
+              r = this.swipes,
               o = this.trackSize,
               s = 0 === i,
-              u = i === r - 1
+              u = i === a - 1
             ;(!this.loop && ((s && (0 < e || t < 0)) || (u && (e < 0 || 0 < t)))) ||
-              r <= 1 ||
-              ((a[0].offset = u && (n < 0 || 0 < t) ? o : 0),
-              (a[r - 1].offset = s && (0 < n || t < 0) ? -o : 0),
-              t && -1 <= i + t && i + t <= r && (this.active += t),
+              a <= 1 ||
+              ((r[0].offset = u && (n < 0 || 0 < t) ? o : 0),
+              (r[a - 1].offset = s && (0 < n || t < 0) ? -o : 0),
+              t && -1 <= i + t && i + t <= a && (this.active += t),
               (this.offset = e - this.active * this.size))
           },
           swipeTo: function(t) {
@@ -696,7 +802,7 @@ module.exports = (function(t) {
       s = n("ZVyw"),
       u = n.n(s),
       c = Object(o.a)(
-        a,
+        r,
         function() {
           var t = this,
             e = t.$createElement,
@@ -742,6 +848,7 @@ module.exports = (function(t) {
   },
   Xl01: function(t, e, n) {
     var i = {
+      "./Avatar.vue": "+BkN",
       "./Button.vue": "/kPn",
       "./Heading.vue": "oIR/",
       "./Icon.vue": "68yd",
@@ -751,21 +858,21 @@ module.exports = (function(t) {
       "./Textarea.vue": "lK0x",
       "./Wrapper.vue": "9t9y",
     }
-    function r(t) {
-      var e = a(t)
+    function a(t) {
+      var e = r(t)
       return n(e)
     }
-    function a(t) {
+    function r(t) {
       var e = i[t]
       if (e + 1) return e
       var n = new Error("Cannot find module '" + t + "'")
       throw ((n.code = "MODULE_NOT_FOUND"), n)
     }
-    ;(r.keys = function() {
+    ;(a.keys = function() {
       return Object.keys(i)
     }),
-      (r.resolve = a),
-      ((t.exports = r).id = "Xl01")
+      (a.resolve = r),
+      ((t.exports = a).id = "Xl01")
   },
   Z0DB: function(t, e, n) {
     "use strict"
@@ -773,7 +880,6 @@ module.exports = (function(t) {
     n.n(i).a
   },
   ZVyw: function(t, e) {},
-  a2EW: function(t, e, n) {},
   bT9U: function(t, e, n) {},
   bzL3: function(t, e, n) {
     var i = {
@@ -784,45 +890,46 @@ module.exports = (function(t) {
       "./review.svg": "eAtJ",
       "./share.svg": "vVuZ",
     }
-    function r(t) {
-      var e = a(t)
+    function a(t) {
+      var e = r(t)
       return n(e)
     }
-    function a(t) {
+    function r(t) {
       var e = i[t]
       if (e + 1) return e
       var n = new Error("Cannot find module '" + t + "'")
       throw ((n.code = "MODULE_NOT_FOUND"), n)
     }
-    ;(r.keys = function() {
+    ;(a.keys = function() {
       return Object.keys(i)
     }),
-      (r.resolve = a),
-      ((t.exports = r).id = "bzL3")
+      (a.resolve = r),
+      ((t.exports = a).id = "bzL3")
   },
   c1KM: function(t, e, n) {
     var i = { "./Index.vue": "lF/O", "./NotFound.vue": "4K1/" }
-    function r(t) {
-      var e = a(t)
+    function a(t) {
+      var e = r(t)
       return n(e)
     }
-    function a(t) {
+    function r(t) {
       var e = i[t]
       if (e + 1) return e
       var n = new Error("Cannot find module '" + t + "'")
       throw ((n.code = "MODULE_NOT_FOUND"), n)
     }
-    ;(r.keys = function() {
+    ;(a.keys = function() {
       return Object.keys(i)
     }),
-      (r.resolve = a),
-      ((t.exports = r).id = "c1KM")
+      (a.resolve = r),
+      ((t.exports = a).id = "c1KM")
   },
   c5QI: function(t, e, n) {
     "use strict"
     var i = n("KzwA")
     n.n(i).a
   },
+  cD1p: function(t, e, n) {},
   dtxr: function(t, e) {},
   eAtJ: function(t, e) {
     t.exports =
@@ -839,17 +946,16 @@ module.exports = (function(t) {
     n.n(i).a
   },
   gkHm: function(t, e) {},
-  hHbo: function(t, e, n) {
-    "use strict"
-    var i = n("5Pm7")
-    n.n(i).a
-  },
   jstG: function(t, e, n) {
     "use strict"
     var i = n("0xPx")
     n.n(i).a
   },
-  kLRc: function(t, e, n) {},
+  kBK6: function(t, e, n) {
+    "use strict"
+    var i = n("JfE0")
+    n.n(i).a
+  },
   kWgB: function(t, e, n) {
     "use strict"
     var i = n("bT9U")
@@ -865,10 +971,10 @@ module.exports = (function(t) {
         metaInfo: { title: "Vue Design System", htmlAttrs: { lang: "en" } },
         props: { type: { type: String, default: "div" } },
       },
-      r = (n("0K1V"), n("KHd+")),
-      a = n("9I8L"),
-      o = n.n(a),
-      s = Object(r.a)(
+      a = (n("0K1V"), n("KHd+")),
+      r = n("9I8L"),
+      o = n.n(r),
+      s = Object(a.a)(
         i,
         function() {
           var t = this,
@@ -958,10 +1064,10 @@ module.exports = (function(t) {
           },
         },
       },
-      r = (n("qQO5"), n("KHd+")),
-      a = n("7DUr"),
-      o = n.n(a),
-      s = Object(r.a)(
+      a = (n("qQO5"), n("KHd+")),
+      r = n("7DUr"),
+      o = n.n(r),
+      s = Object(a.a)(
         i,
         function() {
           var t = this,
@@ -1017,12 +1123,10 @@ module.exports = (function(t) {
         props: {
           type: { type: String, default: "div" },
           id: { type: Number, required: !0 },
-          route: { type: String, required: !0 },
           image: { type: String, required: !0 },
           title: { type: String, required: !0 },
           location: { type: String, required: !1, default: "" },
           category: { type: String, required: !0 },
-          author: { type: String, required: !0 },
           description: { type: String, required: !0 },
           likes: { type: Number, required: !0 },
           shares: { type: Number, required: !0 },
@@ -1033,16 +1137,16 @@ module.exports = (function(t) {
           },
         },
       },
-      r = (n("1ulK"), n("LAKi"), n("KHd+")),
-      a = n("dtxr"),
-      o = n.n(a),
-      s = Object(r.a)(
+      a = (n("sr/D"), n("oTwE"), n("KHd+")),
+      r = n("dtxr"),
+      o = n.n(r),
+      s = Object(a.a)(
         i,
         function() {
           var t = this,
             e = t.$createElement,
             n = t._self._c || e
-          return n(t.type, { tag: "component", staticClass: "card", on: { mouseover: t.mouseOver } }, [
+          return n(t.type, { tag: "component", staticClass: "card" }, [
             n("div", { staticClass: "image", style: { "background-image": "url(" + t.image + ")" } }),
             t._v(" "),
             n("div", { staticClass: "card-wrapper" }, [
@@ -1074,7 +1178,7 @@ module.exports = (function(t) {
         [],
         !1,
         null,
-        "ec8582ba",
+        "3bbe9c7c",
         null
       )
     "function" == typeof o.a && o()(s), (s.options.__file = "NewsSlider.vue"), (e.default = s.exports)
@@ -1108,10 +1212,10 @@ module.exports = (function(t) {
           },
         },
       },
-      r = (n("kWgB"), n("KHd+")),
-      a = n("Tof5"),
-      o = n.n(a),
-      s = Object(r.a)(
+      a = (n("kWgB"), n("KHd+")),
+      r = n("Tof5"),
+      o = n.n(r),
+      s = Object(a.a)(
         i,
         function() {
           var t = this,
@@ -1155,10 +1259,10 @@ module.exports = (function(t) {
           },
         },
       },
-      r = (n("Z0DB"), n("KHd+")),
-      a = n("woMB"),
-      o = n.n(a),
-      s = Object(r.a)(
+      a = (n("Z0DB"), n("KHd+")),
+      r = n("woMB"),
+      o = n.n(r),
+      s = Object(a.a)(
         i,
         function() {
           var t = this.$createElement
@@ -1172,6 +1276,11 @@ module.exports = (function(t) {
       )
     "function" == typeof o.a && o()(s), (s.options.__file = "Heading.vue"), (e.default = s.exports)
   },
+  oTwE: function(t, e, n) {
+    "use strict"
+    var i = n("Kboc")
+    n.n(i).a
+  },
   oXgq: function(t, e, n) {},
   qJZK: function(t, e, n) {
     "use strict"
@@ -1183,6 +1292,7 @@ module.exports = (function(t) {
     var i = n("P91N")
     n.n(i).a
   },
+  qeai: function(t, e, n) {},
   r6ov: function(t, e, n) {
     "use strict"
     n.r(e)
@@ -1207,10 +1317,10 @@ module.exports = (function(t) {
           },
         },
       },
-      r = (n("nZfC"), n("KHd+")),
-      a = n("7kMZ"),
-      o = n.n(a),
-      s = Object(r.a)(
+      a = (n("nZfC"), n("KHd+")),
+      r = n("7kMZ"),
+      o = n.n(r),
+      s = Object(a.a)(
         i,
         function() {
           var t = this,
@@ -1229,6 +1339,11 @@ module.exports = (function(t) {
         null
       )
     "function" == typeof o.a && o()(s), (s.options.__file = "TextStyle.vue"), (e.default = s.exports)
+  },
+  "sr/D": function(t, e, n) {
+    "use strict"
+    var i = n("wpDG")
+    n.n(i).a
   },
   tcIX: function(t, e) {},
   ua5Q: function(t, e, n) {
@@ -1257,10 +1372,10 @@ module.exports = (function(t) {
           },
         },
       },
-      r = (n("hHbo"), n("Ohei"), n("KHd+")),
-      a = n("/WLx"),
-      o = n.n(a),
-      s = Object(r.a)(
+      a = (n("VmAo"), n("LzOt"), n("KHd+")),
+      r = n("/WLx"),
+      o = n.n(r),
+      s = Object(a.a)(
         i,
         function() {
           var t = this,
@@ -1320,7 +1435,7 @@ module.exports = (function(t) {
                   t._v("\n            " + t._s(t.shortDescription) + "\n          "),
                 ]),
                 t._v(" "),
-                n("div", { staticClass: "extra" }, [n("div", { staticClass: "cetaceans" }, [n("AppAvatarList")], 1)]),
+                n("div", { staticClass: "extra" }, [n("div", { staticClass: "cetaceans" }, [n("AvatarList")], 1)]),
               ]),
             ]),
           ])
@@ -1328,7 +1443,7 @@ module.exports = (function(t) {
         [],
         !1,
         null,
-        "1953889e",
+        "30c2814d",
         null
       )
     "function" == typeof o.a && o()(s), (s.options.__file = "ProjectCard.vue"), (e.default = s.exports)
@@ -1338,4 +1453,5 @@ module.exports = (function(t) {
       '<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 640q0 26-19 45l-512 512q-19 19-45 19t-45-19-19-45v-256h-224q-98 0-175.5 6t-154 21.5-133 42.5-105.5 69.5-80 101-48.5 138.5-17.5 181q0 55 5 123 0 6 2.5 23.5t2.5 26.5q0 15-8.5 25t-23.5 10q-16 0-28-17-7-9-13-22t-13.5-30-10.5-24q-127-285-127-451 0-199 53-333 162-403 875-403h224v-256q0-26 19-45t45-19 45 19l512 512q19 19 19 45z"/></svg>'
   },
   woMB: function(t, e) {},
+  wpDG: function(t, e, n) {},
 })
