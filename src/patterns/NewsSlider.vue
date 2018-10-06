@@ -1,8 +1,7 @@
 <template>
   <component 
     :is="type"
-    class="card"
-    @mouseover="mouseOver">
+    class="card">
 
       <div 
         :style="{ 'background-image': 'url(' + image + ')' }"
@@ -61,10 +60,6 @@ export default {
       type: Number,
       required: true,
     },
-    route: {
-      type: String,
-      required: true,
-    },
     /**
      * Image to be displayed in the Card
      */
@@ -82,10 +77,6 @@ export default {
       default: "",
     },
     category: {
-      type: String,
-      required: true,
-    },
-    author: {
       type: String,
       required: true,
     },
