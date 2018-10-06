@@ -12,8 +12,6 @@
         <Icon name="heart" size="small" fill="rgb(255,255,255)" /><span class="no-of-likes">{{ likes }}</span>
       </div>
 
-      <!-- <nuxt-link :to="route"> -->
-
         <div class="card-wrapper">
           <div
             :style="{ 'background-image': 'url(' + image + ')' }"
@@ -48,13 +46,11 @@
             </div>
             <div class="extra">
               <div class="cetaceans">
-                <AppAvatarList />
+                <AvatarList />
               </div>
             </div>
           </div>
         </div>
-
-      <!-- </nuxt-link> -->
 
   </component>
 </template>
