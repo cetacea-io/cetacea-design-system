@@ -70,15 +70,16 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("N8dR"), n("KHd+")),
+      a = (n("79uY"), n("KHd+")),
       r = n("VqCz"),
       o = n.n(r),
       s = Object(a.a)(
         i,
         function() {
           var t = this,
-            e = t.$createElement
-          return (t._self._c || e)(
+            e = t.$createElement,
+            n = t._self._c || e
+          return n(
             t.type,
             {
               tag: "component",
@@ -86,17 +87,18 @@ module.exports = (function(t) {
               class: t.getSize,
               style: { "background-image": "url(" + t.image + ")" },
             },
-            [t._v("\n  " + t._s(t.number) + "\n")]
+            [t.number ? n("span", [t._v("\n  +" + t._s(t.number) + "\n  ")]) : t._e()]
           )
         },
         [],
         !1,
         null,
-        "1e1be353",
+        "68012fca",
         null
       )
     "function" == typeof o.a && o()(s), (s.options.__file = "Avatar.vue"), (e.default = s.exports)
   },
+  "/FuT": function(t, e, n) {},
   "/WLx": function(t, e) {},
   "/kPn": function(t, e, n) {
     "use strict"
@@ -311,8 +313,14 @@ module.exports = (function(t) {
       )
     "function" == typeof s.a && s()(u), (u.options.__file = "Icon.vue"), (e.default = u.exports)
   },
+  "79uY": function(t, e, n) {
+    "use strict"
+    var i = n("NlGY")
+    n.n(i).a
+  },
   "7DUr": function(t, e) {},
   "7dOS": function(t, e) {},
+  "7dR3": function(t, e) {},
   "7kMZ": function(t, e) {},
   "9I8L": function(t, e) {},
   "9t9y": function(t, e, n) {
@@ -354,7 +362,7 @@ module.exports = (function(t) {
           number: { type: String, required: !1, default: "" },
         },
       },
-      a = (n("kBK6"), n("KHd+")),
+      a = (n("FqpF"), n("KHd+")),
       r = n("RUJA"),
       o = n.n(r),
       s = Object(a.a)(
@@ -383,7 +391,7 @@ module.exports = (function(t) {
                 },
               }),
               t._v(" "),
-              n("Avatar", { attrs: { icon: "", number: "+12" } }),
+              n("Avatar", { attrs: { icon: "", number: 12 } }),
             ],
             1
           )
@@ -391,11 +399,12 @@ module.exports = (function(t) {
         [],
         !1,
         null,
-        "5cbd8831",
+        "682e565b",
         null
       )
     "function" == typeof o.a && o()(s), (s.options.__file = "AvatarList.vue"), (e.default = s.exports)
   },
+  CByH: function(t, e) {},
   ECTP: function(t, e) {},
   FeAk: function(t, e, n) {},
   FmFd: function(t, e, n) {
@@ -445,18 +454,93 @@ module.exports = (function(t) {
       )
     "function" == typeof o.a && o()(s), (s.options.__file = "Paragraph.vue"), (e.default = s.exports)
   },
+  FqpF: function(t, e, n) {
+    "use strict"
+    var i = n("kjRr")
+    n.n(i).a
+  },
   HpXA: function(t, e) {},
+  INW4: function(t, e, n) {
+    "use strict"
+    n.r(e)
+    var i,
+      a = n("lSNA"),
+      r = n.n(a),
+      o = {
+        name: "PositionCard",
+        status: "prototype",
+        release: "1.0.0",
+        props: ((i = { title: { type: Number, required: !0 }, type: { type: String, default: "Card" } }),
+        r()(i, "title", { type: String, default: null }),
+        r()(i, "description", { type: String, default: null }),
+        r()(i, "requirements", { type: String, default: null }),
+        r()(i, "time", { type: String, default: null }),
+        i),
+      },
+      s = (n("y5KG"), n("KHd+")),
+      u = n("7dR3"),
+      c = n.n(u),
+      l = Object(s.a)(
+        o,
+        function() {
+          var t = this,
+            e = t.$createElement,
+            n = t._self._c || e
+          return n(
+            t.type,
+            { tag: "component", staticClass: "position-wrapper" },
+            [
+              n("div", { staticClass: "title" }, [t._v(t._s(t.title))]),
+              t._v(" "),
+              n(
+                "div",
+                { staticClass: "time" },
+                [
+                  n("Icon", { staticClass: "clock-icon", attrs: { name: "clock", size: "small" } }),
+                  t._v(" "),
+                  n("span", [t._v(t._s(t.time))]),
+                ],
+                1
+              ),
+              t._v(" "),
+              n("div", { staticClass: "block" }, [
+                n("div", { staticClass: "subtitle" }, [t._v(" Descripcion de puesto ")]),
+                t._v(" "),
+                n("div", [t._v(t._s(t.description))]),
+              ]),
+              t._v(" "),
+              n("div", { staticClass: "block" }, [
+                n("div", { staticClass: "subtitle" }, [t._v("Requisitos")]),
+                t._v(" "),
+                n("div", [t._v(t._s(t.requirements))]),
+              ]),
+              t._v(" "),
+              n("div", { staticClass: "block" }, [n("AvatarList")], 1),
+              t._v(" "),
+              n("Button", { staticClass: "position-button" }, [t._v("Postularme")]),
+            ],
+            1
+          )
+        },
+        [],
+        !1,
+        null,
+        "87644316",
+        null
+      )
+    "function" == typeof c.a && c()(l), (l.options.__file = "PositionCard.vue"), (e.default = l.exports)
+  },
   IU6l: function(t, e, n) {
     "use strict"
     var i = n("FeAk")
     n.n(i).a
   },
-  JfE0: function(t, e, n) {},
   JtIp: function(t, e, n) {
     var i = {
       "./AvatarList.vue": "BazK",
       "./NavBar.vue": "nrZS",
       "./NewsSlider.vue": "mXHK",
+      "./PositionCard.vue": "INW4",
       "./ProjectCard.vue": "ua5Q",
       "./SwipeSlider.vue": "XPp5",
     }
@@ -523,18 +607,36 @@ module.exports = (function(t) {
   },
   Kboc: function(t, e, n) {},
   KzwA: function(t, e, n) {},
+  L7ye: function(t, e) {},
   LzOt: function(t, e, n) {
     "use strict"
     var i = n("cD1p")
     n.n(i).a
   },
   MzIM: function(t, e, n) {},
-  N8dR: function(t, e, n) {
-    "use strict"
-    var i = n("qeai")
-    n.n(i).a
-  },
+  NlGY: function(t, e, n) {},
   Nqnq: function(t, e, n) {},
+  ONH9: function(t, e, n) {
+    "use strict"
+    n.r(e)
+    var i = { name: "Tag", status: "prototype", release: "1.0.0", props: { type: { type: String, default: "span" } } },
+      a = (n("n2Va"), n("KHd+")),
+      r = n("L7ye"),
+      o = n.n(r),
+      s = Object(a.a)(
+        i,
+        function() {
+          var t = this.$createElement
+          return (this._self._c || t)(this.type, { tag: "component", staticClass: "tag" }, [this._t("default")], 2)
+        },
+        [],
+        !1,
+        null,
+        "2d331717",
+        null
+      )
+    "function" == typeof o.a && o()(s), (s.options.__file = "Tag.vue"), (e.default = s.exports)
+  },
   P91N: function(t, e, n) {},
   QOEz: function(t, e, n) {
     "use strict"
@@ -630,6 +732,11 @@ module.exports = (function(t) {
     "function" == typeof o.a && o()(s), (s.options.__file = "Input.vue"), (e.default = s.exports)
   },
   UvfI: function(t, e, n) {},
+  VNqy: function(t, e, n) {
+    "use strict"
+    var i = n("gS7e")
+    n.n(i).a
+  },
   VOwi: function(t, e, n) {},
   VmAo: function(t, e, n) {
     "use strict"
@@ -850,10 +957,12 @@ module.exports = (function(t) {
     var i = {
       "./Avatar.vue": "+BkN",
       "./Button.vue": "/kPn",
+      "./Card.vue": "uJhq",
       "./Heading.vue": "oIR/",
       "./Icon.vue": "68yd",
       "./Input.vue": "UklV",
       "./Paragraph.vue": "FmFd",
+      "./Tag.vue": "ONH9",
       "./TextStyle.vue": "r6ov",
       "./Textarea.vue": "lK0x",
       "./Wrapper.vue": "9t9y",
@@ -883,6 +992,7 @@ module.exports = (function(t) {
   bT9U: function(t, e, n) {},
   bzL3: function(t, e, n) {
     var i = {
+      "./clock.svg": "dVsf",
       "./deprecated.svg": "/thn",
       "./heart.svg": "fRY4",
       "./prototype.svg": "2dwG",
@@ -930,11 +1040,16 @@ module.exports = (function(t) {
     n.n(i).a
   },
   cD1p: function(t, e, n) {},
+  dVsf: function(t, e) {
+    t.exports =
+      '<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1024 544v448q0 14-9 23t-23 9h-320q-14 0-23-9t-9-23v-64q0-14 9-23t23-9h224v-352q0-14 9-23t23-9h64q14 0 23 9t9 23zm416 352q0-148-73-273t-198-198-273-73-273 73-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273zm224 0q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/></svg>'
+  },
   dtxr: function(t, e) {},
   eAtJ: function(t, e) {
     t.exports =
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></svg>'
   },
+  eETp: function(t, e, n) {},
   eUC7: function(t, e, n) {},
   fRY4: function(t, e) {
     t.exports =
@@ -945,15 +1060,11 @@ module.exports = (function(t) {
     var i = n("UvfI")
     n.n(i).a
   },
+  gS7e: function(t, e, n) {},
   gkHm: function(t, e) {},
   jstG: function(t, e, n) {
     "use strict"
     var i = n("0xPx")
-    n.n(i).a
-  },
-  kBK6: function(t, e, n) {
-    "use strict"
-    var i = n("JfE0")
     n.n(i).a
   },
   kWgB: function(t, e, n) {
@@ -961,6 +1072,7 @@ module.exports = (function(t) {
     var i = n("bT9U")
     n.n(i).a
   },
+  kjRr: function(t, e, n) {},
   "lF/O": function(t, e, n) {
     "use strict"
     n.r(e)
@@ -1183,6 +1295,11 @@ module.exports = (function(t) {
       )
     "function" == typeof o.a && o()(s), (s.options.__file = "NewsSlider.vue"), (e.default = s.exports)
   },
+  n2Va: function(t, e, n) {
+    "use strict"
+    var i = n("eETp")
+    n.n(i).a
+  },
   nZfC: function(t, e, n) {
     "use strict"
     var i = n("oXgq")
@@ -1292,7 +1409,6 @@ module.exports = (function(t) {
     var i = n("P91N")
     n.n(i).a
   },
-  qeai: function(t, e, n) {},
   r6ov: function(t, e, n) {
     "use strict"
     n.r(e)
@@ -1346,6 +1462,27 @@ module.exports = (function(t) {
     n.n(i).a
   },
   tcIX: function(t, e) {},
+  uJhq: function(t, e, n) {
+    "use strict"
+    n.r(e)
+    var i = { name: "Card", status: "prototype", release: "1.0.0", props: { type: { type: String, default: "div" } } },
+      a = (n("VNqy"), n("KHd+")),
+      r = n("CByH"),
+      o = n.n(r),
+      s = Object(a.a)(
+        i,
+        function() {
+          var t = this.$createElement
+          return (this._self._c || t)(this.type, { tag: "component", staticClass: "card" }, [this._t("default")], 2)
+        },
+        [],
+        !1,
+        null,
+        "b0d5991a",
+        null
+      )
+    "function" == typeof o.a && o()(s), (s.options.__file = "Card.vue"), (e.default = s.exports)
+  },
   ua5Q: function(t, e, n) {
     "use strict"
     n.r(e)
@@ -1454,4 +1591,9 @@ module.exports = (function(t) {
   },
   woMB: function(t, e) {},
   wpDG: function(t, e, n) {},
+  y5KG: function(t, e, n) {
+    "use strict"
+    var i = n("/FuT")
+    n.n(i).a
+  },
 })

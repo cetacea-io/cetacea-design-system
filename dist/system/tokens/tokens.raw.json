@@ -9,8 +9,8 @@
     "neon_blue": {
       "value": "232, 100%"
     },
-    "oxford_blue": {
-      "value": "210, 100%"
+    "blue_whale": {
+      "value": "216, 47%"
     },
     "rich_black": {
       "value": "#001123"
@@ -26,6 +26,13 @@
       "value": "rgb(255, 186, 10)",
       "originalValue": "hsla({!ucla_gold}, 52%, 1)",
       "name": "color_ucla_gold"
+    },
+    "color_blue_whale": {
+      "type": "color",
+      "category": "color_group_4",
+      "value": "rgb(18, 30, 49)",
+      "originalValue": "hsla({!blue_whale}, 13%, 1)",
+      "name": "color_blue_whale"
     },
     "color_ucla_gold_darker": {
       "type": "color",
@@ -131,13 +138,6 @@
       "value": "rgb(233, 243, 253)",
       "originalValue": "#E9F3FD",
       "name": "color_cloud"
-    },
-    "color_oxford_blue": {
-      "type": "color",
-      "category": "color_group_4",
-      "value": "rgb(0, 38, 77)",
-      "originalValue": "hsla({!oxford_blue}, 15%, 1)",
-      "name": "color_oxford_blue"
     },
     "color_neon_blue_darker": {
       "type": "color",
