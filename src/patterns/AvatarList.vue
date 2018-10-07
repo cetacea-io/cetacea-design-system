@@ -11,7 +11,7 @@
 
     <Avatar
       icon
-      number="+12"/>
+      :number="+12"/>
   </component>
 </template>
 
