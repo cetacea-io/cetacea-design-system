@@ -14,8 +14,8 @@ aliases:
     value: "43, 100%"
   neon_blue:
     value: "232, 100%"
-  oxford_blue:
-    value: "210, 100%"
+  blue_whale:
+    value: "216, 47%"
   rich_black:
     value: "#001123"
   white:
@@ -69,8 +69,8 @@ props:
     value: "hsla({!neon_blue}, 74%, 1)"
     category: color_group_3
 
-  color_oxford_blue:
-    value: "hsla({!oxford_blue}, 15%, 1)"
+  color_blue_whale:
+    value: "hsla({!blue_whale}, 13%, 1)"
     category: color_group_4
   color_rich_black:
     value: "{!rich_black}"
