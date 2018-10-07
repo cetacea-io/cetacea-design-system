@@ -4,7 +4,10 @@
     :style="{ 'background-image': 'url(' + image + ')' }"
     :class="getSize"
     class="avatar">
-    {{ number }}
+    <span 
+      v-if="number">
+    +{{ number }}
+    </span>
   </component>
 </template>
 
@@ -72,6 +75,8 @@ export default {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  font-family: $font-text;
 
   color: #7e92af;
   font-weight: bold;
