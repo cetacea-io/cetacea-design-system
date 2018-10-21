@@ -99,7 +99,6 @@ module.exports = (function(t) {
     "function" == typeof s.a && s()(o), (o.options.__file = "Avatar.vue"), (e.default = o.exports)
   },
   "+UXe": function(t, e, n) {},
-  "/FuT": function(t, e, n) {},
   "/WLx": function(t, e) {},
   "/kPn": function(t, e, n) {
     "use strict"
@@ -187,11 +186,17 @@ module.exports = (function(t) {
     n.n(i).a
   },
   "0xPx": function(t, e, n) {},
+  "0za5": function(t, e, n) {
+    "use strict"
+    var i = n("3Cin")
+    n.n(i).a
+  },
   "1phr": function(t, e) {},
   "2dwG": function(t, e) {
     t.exports =
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zM238.1 177.9L102.4 313.6l-6.3 57.1c-.8 7.6 5.6 14.1 13.3 13.3l57.1-6.3L302.2 242c2.3-2.3 2.3-6.1 0-8.5L246.7 178c-2.5-2.4-6.3-2.4-8.6-.1zM345 165.1L314.9 135c-9.4-9.4-24.6-9.4-33.9 0l-23.1 23.1c-2.3 2.3-2.3 6.1 0 8.5l55.5 55.5c2.3 2.3 6.1 2.3 8.5 0L345 199c9.3-9.3 9.3-24.5 0-33.9z"/></svg>'
   },
+  "3Cin": function(t, e, n) {},
   "4K1/": function(t, e, n) {
     "use strict"
     n.r(e)
@@ -365,7 +370,7 @@ module.exports = (function(t) {
           console.log(this.images)
         },
       },
-      a = (n("wt2n"), n("KHd+")),
+      a = (n("Y1+4"), n("KHd+")),
       r = n("RUJA"),
       s = n.n(r),
       o = Object(a.a)(
@@ -390,7 +395,7 @@ module.exports = (function(t) {
         [],
         !1,
         null,
-        "a11ba666",
+        "38450061",
         null
       )
     "function" == typeof s.a && s()(o), (o.options.__file = "AvatarList.vue"), (e.default = o.exports)
@@ -461,9 +466,11 @@ module.exports = (function(t) {
         r()(i, "description", { type: String, default: null }),
         r()(i, "requirements", { type: String, default: null }),
         r()(i, "time", { type: String, default: null }),
+        r()(i, "url", { type: String, default: null }),
+        r()(i, "compensation", { type: String, default: null }),
         i),
       },
-      o = (n("y5KG"), n("KHd+")),
+      o = (n("0za5"), n("KHd+")),
       u = n("7dR3"),
       c = n.n(u),
       l = Object(o.a)(
@@ -478,19 +485,34 @@ module.exports = (function(t) {
             [
               n("div", { staticClass: "title" }, [t._v(t._s(t.title))]),
               t._v(" "),
-              n(
-                "div",
-                { staticClass: "time" },
-                [
-                  n("Icon", { staticClass: "clock-icon", attrs: { name: "clock", size: "small" } }),
-                  t._v(" "),
-                  n("span", [t._v(t._s(t.time))]),
-                ],
-                1
-              ),
+              t.time
+                ? n(
+                    "div",
+                    { staticClass: "time" },
+                    [
+                      n("Icon", { staticClass: "clock-icon", attrs: { name: "clock", size: "small" } }),
+                      t._v(" "),
+                      n("span", [t._v(t._s(t.time))]),
+                    ],
+                    1
+                  )
+                : t._e(),
+              t._v(" "),
+              t.compensation
+                ? n(
+                    "div",
+                    { staticClass: "time" },
+                    [
+                      n("Icon", { staticClass: "clock-icon", attrs: { name: "handshake", size: "small" } }),
+                      t._v(" "),
+                      n("span", [t._v(t._s(t.compensation))]),
+                    ],
+                    1
+                  )
+                : t._e(),
               t._v(" "),
               n("div", { staticClass: "block" }, [
-                n("div", { staticClass: "subtitle" }, [t._v(" Descripcion de puesto ")]),
+                n("div", { staticClass: "subtitle" }, [t._v(" Descripción de puesto ")]),
                 t._v(" "),
                 n("div", [t._v(t._s(t.description))]),
               ]),
@@ -503,7 +525,9 @@ module.exports = (function(t) {
               t._v(" "),
               n("div", { staticClass: "block" }, [n("AvatarList")], 1),
               t._v(" "),
-              n("Button", { staticClass: "position-button" }, [t._v("Postularme")]),
+              n("Button", { staticClass: "position-button", attrs: { type: "a", href: t.url } }, [
+                t._v("\n    Me interesa\n  "),
+              ]),
             ],
             1
           )
@@ -511,7 +535,7 @@ module.exports = (function(t) {
         [],
         !1,
         null,
-        "87644316",
+        "1c85ad2a",
         null
       )
     "function" == typeof c.a && c()(l), (l.options.__file = "PositionCard.vue"), (e.default = l.exports)
@@ -964,18 +988,23 @@ module.exports = (function(t) {
       (a.resolve = r),
       ((t.exports = a).id = "Xl01")
   },
+  "Y1+4": function(t, e, n) {
+    "use strict"
+    var i = n("s+jV")
+    n.n(i).a
+  },
   Z0DB: function(t, e, n) {
     "use strict"
     var i = n("eUC7")
     n.n(i).a
   },
   ZVyw: function(t, e) {},
-  a0wp: function(t, e, n) {},
   bT9U: function(t, e, n) {},
   bzL3: function(t, e, n) {
     var i = {
       "./clock.svg": "dVsf",
       "./deprecated.svg": "/thn",
+      "./handshake.svg": "l2kJ",
       "./heart.svg": "fRY4",
       "./prototype.svg": "2dwG",
       "./ready.svg": "AAsE",
@@ -1052,6 +1081,10 @@ module.exports = (function(t) {
     "use strict"
     var i = n("bT9U")
     n.n(i).a
+  },
+  l2kJ: function(t, e) {
+    t.exports =
+      '<svg aria-hidden="true" data-prefix="fas" data-icon="handshake" class="svg-inline--fa fa-handshake fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M434.7 64h-85.9c-8 0-15.7 3-21.6 8.4l-98.3 90c-.1.1-.2.3-.3.4-16.6 15.6-16.3 40.5-2.1 56 12.7 13.9 39.4 17.6 56.1 2.7.1-.1.3-.1.4-.2l79.9-73.2c6.5-5.9 16.7-5.5 22.6 1 6 6.5 5.5 16.6-1 22.6l-26.1 23.9L504 313.8c2.9 2.4 5.5 5 7.9 7.7V128l-54.6-54.6c-5.9-6-14.1-9.4-22.6-9.4zM544 128.2v223.9c0 17.7 14.3 32 32 32h64V128.2h-96zm48 223.9c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM0 384h64c17.7 0 32-14.3 32-32V128.2H0V384zm48-63.9c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16c0-8.9 7.2-16 16-16zm435.9 18.6L334.6 217.5l-30 27.5c-29.7 27.1-75.2 24.5-101.7-4.4-26.9-29.4-24.8-74.9 4.4-101.7L289.1 64h-83.8c-8.5 0-16.6 3.4-22.6 9.4L128 128v223.9h18.3l90.5 81.9c27.4 22.3 67.7 18.1 90-9.3l.2-.2 17.9 15.5c15.9 13 39.4 10.5 52.3-5.4l31.4-38.6 5.4 4.4c13.7 11.1 33.9 9.1 45-4.7l9.5-11.7c11.2-13.8 9.1-33.9-4.6-45.1z"></path></svg>'
   },
   "lF/O": function(t, e, n) {
     "use strict"
@@ -1437,6 +1470,7 @@ module.exports = (function(t) {
     "function" == typeof s.a && s()(o), (o.options.__file = "TextStyle.vue"), (e.default = o.exports)
   },
   rWUG: function(t, e, n) {},
+  "s+jV": function(t, e, n) {},
   "sr/D": function(t, e, n) {
     "use strict"
     var i = n("wpDG")
@@ -1602,16 +1636,6 @@ module.exports = (function(t) {
   },
   woMB: function(t, e) {},
   wpDG: function(t, e, n) {},
-  wt2n: function(t, e, n) {
-    "use strict"
-    var i = n("a0wp")
-    n.n(i).a
-  },
-  y5KG: function(t, e, n) {
-    "use strict"
-    var i = n("/FuT")
-    n.n(i).a
-  },
   yjBm: function(t, e, n) {
     "use strict"
     var i = n("+UXe")

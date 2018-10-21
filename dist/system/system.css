@@ -414,7 +414,7 @@ h6[data-v-614943df] {
     padding: 64px;
   }
 }
-.avatar[data-v-a11ba666]:not(:last-child) {
+.avatar[data-v-38450061]:not(:last-child) {
   margin-right: -15px;
 }
 .nav[data-v-9fc9606c] {
@@ -534,26 +534,26 @@ h6[data-v-614943df] {
   position: relative;
   z-index: 2;
 }
-.position-wrapper .position-button[data-v-87644316] {
+.position-wrapper .position-button[data-v-1c85ad2a] {
   width: 100%;
 }
-.position-wrapper .block[data-v-87644316] {
+.position-wrapper .block[data-v-1c85ad2a] {
   margin-bottom: 24px;
 }
-.position-wrapper .title[data-v-87644316] {
+.position-wrapper .title[data-v-1c85ad2a] {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 24px;
 }
-.position-wrapper .subtitle[data-v-87644316] {
+.position-wrapper .subtitle[data-v-1c85ad2a] {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 8px;
 }
-.position-wrapper .time[data-v-87644316] {
+.position-wrapper .time[data-v-1c85ad2a] {
   margin-bottom: 8px;
 }
-.position-wrapper .time .clock-icon[data-v-87644316] {
+.position-wrapper .time .clock-icon[data-v-1c85ad2a] {
   margin-right: 8px;
   vertical-align: middle;
 }

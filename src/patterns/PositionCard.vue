@@ -3,12 +3,20 @@
     :is="type"
     class="position-wrapper">
     <div class="title">{{ title }}</div>
-    <div class="time">
+    <div
+      v-if="time"
+      class="time">
         <Icon class="clock-icon" name="clock" size="small"/>
         <span>{{ time }}</span>
     </div>
+    <div
+      v-if="compensation"
+      class="time">
+        <Icon class="clock-icon" name="handshake" size="small"/>
+        <span>{{ compensation }}</span>
+    </div>
     <div class="block">
-      <div class="subtitle"> Descripcion de puesto </div>
+      <div class="subtitle"> Descripción de puesto </div>
       <div>{{ description }}</div>
     </div>
     <div class="block">
@@ -18,7 +26,12 @@
     <div class="block">
       <AvatarList/>
     </div>
-    <Button class="position-button">Postularme</Button>
+    <Button
+    type="a"
+    :href="url"
+    class="position-button">
+      Me interesa
+    </Button>
   </component>
 </template>
 
@@ -57,6 +70,14 @@ export default {
       default: null,
     },
     time: {
+      type: String,
+      default: null,
+    },
+    url: {
+      type: String,
+      default: null,
+    },
+    compensation: {
       type: String,
       default: null,
     },
@@ -107,6 +128,8 @@ export default {
       time="2 horas a la semana"
       description="Programador en C# que sepa Unity para unirse al equipo de desarrollo"
       requirements="Haber concluido por lo menos dos proyectos de cetacea"
+      compensation="$2,000"
+      url="https://www.youtube.com"
     />
   </div>
   ```
