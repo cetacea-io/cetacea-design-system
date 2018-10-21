@@ -1,15 +1,15 @@
 <template>
   <component 
     :is="type"
-    class="card"
-    @mouseover="mouseOver">
+    class="card">
+    <!-- @mouseover="mouseOver"> -->
 
       <div class="share">
-        <Icon name="share" size="small" fill="rgb(255,255,255)" /><span class="no-of-shares">{{ shares }}</span>
+        <Icon name="share" size="small" fill="rgb(255,255,255)" /><span v-if="shares" class="no-of-shares">{{ shares }}</span>
       </div>
 
       <div class="like">
-        <Icon name="heart" size="small" fill="rgb(255,255,255)" /><span class="no-of-likes">{{ likes }}</span>
+        <Icon name="heart" size="small" fill="rgb(255,255,255)" /><span v-if="likes" class="no-of-likes">{{ likes }}</span>
       </div>
 
         <div class="card-wrapper">
@@ -30,8 +30,7 @@
               {{ title }}
             </div>
             <div class="meta">
-              <i class="fas fa-film"/>{{ category }}
-              <!-- <p>Por {{ author }}</p> -->
+              <i class="fas fa-theater-masks"/>{{ category }}
             </div>
             <div class="description">
               <div 
@@ -45,8 +44,22 @@
               {{ shortDescription }}
             </div>
             <div class="extra">
+              <div class="author-wrapper">
+                <Avatar :image="authorImage" :icon="true"/>
+                <div class="author-meta">
+                  <div class="author-title">
+                    {{ authorTitle }}
+                  </div>
+                  <div class="author-date">
+                    {{ date }}
+                  </div>
+                </div>
+              </div>
               <div class="cetaceans">
-                <AvatarList />
+                <AvatarList 
+                  :images="contributorsImages"
+                  :number="contributorsExtras"
+                />
               </div>
             </div>
           </div>
@@ -115,11 +128,39 @@ export default {
       required: true,
     },
     /**
-     * Author of the project
+     * Image of the author
      */
-    author: {
+    authorImage: {
       type: String,
       required: true,
+    },
+    /**
+     * Name of the author
+     */
+    authorTitle: {
+      type: String,
+      required: true,
+    },
+    /**
+     * Date of the projects
+     */
+    date: {
+      type: String,
+      required: true,
+    },
+    /**
+     * Array of profile pictures of contributors
+     */
+    contributorsImages: {
+      type: Array,
+      required: false,
+    },
+    /**
+     * Number of extras in the contributors
+     */
+    contributorsExtras: {
+      type: Array,
+      required: false,
     },
     /**
      * Short description of the project
@@ -250,10 +291,9 @@ $color-nav-link-active: $color-neon-blue;
   position: absolute;
   background-color: black;
   width: auto;
-  padding: 0 19px;
-  height: 40px;
-  top: 10px;
-  right: 10px;
+  padding: $space-xs $space-s;
+  top: $space-xs;
+  right: $space-xs;
   border-radius: 50px;
   z-index: 1;
   cursor: pointer;
@@ -316,8 +356,27 @@ $color-nav-link-active: $color-neon-blue;
       position: relative;
     }
     & .extra {
+      display: flex;
       align-self: center;
-      justify-self: end;
+      justify-content: space-between;
+
+      & .author-wrapper {
+        display: flex;
+        align-items: center;
+
+        & .author-meta {
+          margin-left: $space-xs;
+
+          & .author-title {
+            color: #33435a;
+            font-size: 0.9em;
+          }
+          & .author-date {
+            color: #62738c;
+            font-size: 0.85em;
+          }
+        }
+      }
     }
   }
 }
@@ -336,6 +395,14 @@ $color-nav-link-active: $color-neon-blue;
     description="Album conceptual de Rock Progresivo, inspirado en sonidos de los 80's.
       La trama relata la historia de dos astronautas perdidos en el espacio, entre el silencio
       del espacio profundo, de pronto se escucha que tocan la puerta de la nave espacial"
+    authorTitle="Ramon Valdez"
+    authorImage="http://www.ultimasnoticiasenred.com.mx/wp-content/uploads/2016/04/don-ramon.jpg"
+    date="6 de Junio"
+    :contributorsImages="[
+      'https://romalive.files.wordpress.com/2016/07/0.jpg?w=720',
+      'https://secure.i.telegraph.co.uk/multimedia/archive/02668/Gabriel_2668021b.jpg'
+    ]"
+    :contributorsExtras="12"
   />
   ```
 </docs>

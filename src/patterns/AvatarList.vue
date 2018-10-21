@@ -1,17 +1,20 @@
 <template>
   <component
     :is="type">
-    <Avatar 
+    <Avatar
+      v-if="images"
       icon
-      image="https://instagram.fntr3-1.fna.fbcdn.net/vp/45a0e2ca198d91b96076d37f8805ab1d/5C45615D/t51.2885-15/e35/41784399_2426890347336146_1249994690766315933_n.jpg"/>
+      :image="images[0]"/>
 
     <Avatar
+      v-if="images"
       icon
-      image="https://instagram.fntr3-1.fna.fbcdn.net/vp/433d763b711ab7bc09c2843bd2b35001/5BC429AF/t51.2885-15/e35/27894011_542593912800477_5623809282366504960_n.jpg"/>
+      :image="images[1]"/>
 
     <Avatar
+      v-if="number"
       icon
-      :number="+12"/>
+      :number="number"/>
   </component>
 </template>
 
@@ -25,16 +28,19 @@ export default {
       type: String,
       default: "div",
     },
-    img: {
-      type: String,
-      required: false,
-      default: "",
+    images: {
+      type: Array,
+      required: true,
+      default: null,
     },
     number: {
-      type: String,
+      type: Number,
       required: false,
       default: "",
     },
+  },
+  mounted() {
+    console.log(this.images)
   },
 }
 </script>
@@ -51,7 +57,13 @@ export default {
 <docs>
   ```jsx
   <div>
-    <AvatarList/>
+    <AvatarList
+      :images="[
+        'https://romalive.files.wordpress.com/2016/07/0.jpg?w=720',
+        'https://secure.i.telegraph.co.uk/multimedia/archive/02668/Gabriel_2668021b.jpg'
+      ]"
+      :number="12"
+      />
   </div>
   ```
 </docs>
