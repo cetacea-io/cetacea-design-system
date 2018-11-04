@@ -4,14 +4,6 @@
     class="card">
     <!-- @mouseover="mouseOver"> -->
 
-      <div class="share">
-        <Icon name="share" size="small" fill="rgb(255,255,255)" /><span v-if="shares" class="no-of-shares">{{ shares }}</span>
-      </div>
-
-      <div class="like">
-        <Icon name="heart" size="small" fill="rgb(255,255,255)" /><span v-if="likes" class="no-of-likes">{{ likes }}</span>
-      </div>
-
         <div class="card-wrapper">
           <div
             :style="{ 'background-image': 'url(' + image + ')' }"
@@ -26,23 +18,16 @@
           </div>
 
           <div class="content">
-            <div class="title">
-              {{ title }}
-            </div>
             <div class="meta">
               <i class="fas fa-theater-masks"/>{{ category }}
             </div>
-            <div class="description">
-              <div class="curtain" />
-              {{ shortDescription }}
+            <div class="title">
+              {{ title }}
             </div>
             <div class="extra">
               <div class="author-wrapper">
-                <Avatar :image="authorImage" :icon="true"/>
+                <Avatar :image="authorImage" borderColor="#101a25" size="mini"/>
                 <div class="author-meta">
-                  <div class="author-title">
-                    {{ authorTitle }}
-                  </div>
                   <div class="author-date">
                     {{ date }}
                   </div>
@@ -52,6 +37,7 @@
                 <AvatarList 
                   :images="contributorsImages"
                   :number="contributorsExtras"
+                  size="mini"
                 />
               </div>
             </div>
@@ -66,7 +52,7 @@
  * Used as project card in project navigation
  */
 export default {
-  name: "ProjectCard",
+  name: "MiniProjectCard",
   status: "review",
   release: "1.0.0",
   props: {
@@ -162,33 +148,6 @@ export default {
     contributorsExtras: {
       type: Array,
       required: false,
-    },
-    /**
-     * Short description of the project
-     */
-    description: {
-      type: String,
-      required: true,
-    },
-    /**
-     * Number of likes the project has
-     */
-    likes: {
-      type: Number,
-      required: true,
-    },
-    /**
-     * Number of shares the project has
-     */
-    shares: {
-      type: Number,
-      required: true,
-    },
-  },
-  computed: {
-    shortDescription() {
-      if (this.description.length > 250) return this.description.substring(0, 250) + "[...]"
-      return this.description
     },
   },
 }
@@ -324,7 +283,7 @@ $color-nav-link-active: $color-neon-blue;
     background-repeat: no-repeat;
     background-size: cover;
 
-    min-height: 250px;
+    min-height: 140px;
 
     position: relative;
 
@@ -334,9 +293,9 @@ $color-nav-link-active: $color-neon-blue;
 
   & .content {
     display: grid;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
 
-    padding: $space-s;
+    padding: $space-xs $space-s $space-s $space-s;
 
     border-radius: 0 0 $radius-default $radius-default;
 
@@ -344,11 +303,11 @@ $color-nav-link-active: $color-neon-blue;
     color: #ffffff;
 
     & .title {
-      font-size: 1.5em;
+      font-size: 1em;
       font-weight: $weight-semi-bold;
     }
     & .meta {
-      padding: 5px 0;
+      font-size: 0.87em;
       & i {
         margin-right: 10px;
       }
@@ -369,7 +328,7 @@ $color-nav-link-active: $color-neon-blue;
     }
     & .extra {
       display: flex;
-      align-self: center;
+      align-self: end;
       justify-content: space-between;
 
       & .author-wrapper {
@@ -379,10 +338,6 @@ $color-nav-link-active: $color-neon-blue;
         & .author-meta {
           margin-left: $space-xs;
 
-          & .author-title {
-            color: #d2d5da;
-            font-size: 0.9em;
-          }
           & .author-date {
             color: #8e9baf;
             font-size: 0.85em;
@@ -398,16 +353,10 @@ $color-nav-link-active: $color-neon-blue;
 <docs>
   ```jsx
   //https://66.media.tumblr.com/f9255859f94a22d656ed4221ce1f7ea3/tumblr_peee0iEtV51wopx9lo1_1280.png
-  <ProjectCard
+  <MiniProjectCard
     image="https://i.redd.it/x12pys0090q11.jpg"
     title="Fountain of Salmacis: Album"
-    :likes="45"
-    :shares="24"
     category="Musica"
-    description="Album conceptual de Rock Progresivo, inspirado en sonidos de los 80's.
-      La trama relata la historia de dos astronautas perdidos en el espacio, entre el silencio
-      del espacio profundo, de pronto se escucha que tocan la puerta de la nave espacial"
-    authorTitle="Ramon Valdez"
     authorImage="http://www.ultimasnoticiasenred.com.mx/wp-content/uploads/2016/04/don-ramon.jpg"
     date="6 de Junio"
     :contributorsImages="[

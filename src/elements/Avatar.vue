@@ -1,7 +1,7 @@
 <template>
   <component
     :is="type"
-    :style="{ 'background-image': 'url(' + image + ')' }"
+    :style="{ 'background-image': 'url(' + image + ')', 'border-color': this.borderColor }"
     :class="getSize"
     class="avatar">
     <span 
@@ -31,37 +31,52 @@ export default {
       required: false,
       default: null,
     },
-    icon: {
-      type: Boolean,
+    borderColor: {
+      type: String,
       required: false,
-      default: false,
+      default: "#FFFFFF",
     },
+    /**
+     * Size of the icon
+     */
     size: {
       type: String,
       required: false,
-      default: "large",
+      default: "icon",
+      validator: value => {
+        return value.match(/(large|icon|mini)/)
+      },
     },
   },
   computed: {
     getSize() {
-      if (this.icon) return "is-icon"
-      else return `is-${this.size}`
+      if (this.size == "large") return "is-large"
+      else if (this.size == "icon") return "is-icon"
+      else if (this.size == "mini") return "is-mini"
     },
   },
 }
 </script>
 
 <style lang="scss" scoped>
+.is-mini {
+  width: 20px !important;
+  height: 20px !important;
+
+  font-size: 12px !important;
+}
+
 .is-icon {
-  width: 40px;
-  height: 40px;
+  width: 40px !important;
+  height: 40px !important;
 }
 
 .is-large {
   width: 200px !important;
   height: 200px !important;
 
-  border: 5px solid #fff !important;
+  border-width: 5px;
+  border-style: solid;
 }
 
 .medium {
@@ -88,7 +103,8 @@ export default {
 
   border-radius: 100%;
 
-  border: 3px solid #fff;
+  border-width: 3px;
+  border-style: solid;
 
   width: 40px;
   height: 40px;
