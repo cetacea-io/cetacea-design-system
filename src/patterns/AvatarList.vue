@@ -3,17 +3,20 @@
     :is="type">
     <Avatar
       v-if="images"
-      icon
+      borderColor="#101a25"
+      :size="this.size"
       :image="images[0]"/>
 
     <Avatar
       v-if="images"
-      icon
+      borderColor="#101a25"
+      :size="this.size"
       :image="images[1]"/>
 
     <Avatar
       v-if="number"
-      icon
+      borderColor="#101a25"
+      :size="this.size"
       :number="number"/>
   </component>
 </template>
@@ -37,6 +40,21 @@ export default {
       type: Number,
       required: false,
       default: "",
+    },
+    borderColor: {
+      type: String,
+      required: false,
+    },
+    /**
+     * Size of the icons
+     */
+    size: {
+      type: String,
+      required: false,
+      default: "icon",
+      validator: value => {
+        return value.match(/(|icon|mini)/)
+      },
     },
   },
   mounted() {

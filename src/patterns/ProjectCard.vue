@@ -33,19 +33,12 @@
               <i class="fas fa-theater-masks"/>{{ category }}
             </div>
             <div class="description">
-              <div 
-                style="
-                position: absolute;
-                width: 100%;
-                height: 60%;
-                background: linear-gradient(rgba(255, 255, 255, 0), #ffffff);
-                bottom: 0;
-              "/>
+              <div class="curtain" />
               {{ shortDescription }}
             </div>
             <div class="extra">
               <div class="author-wrapper">
-                <Avatar :image="authorImage" :icon="true"/>
+                <Avatar :image="authorImage" size="icon" borderColor="#101a25"/>
                 <div class="author-meta">
                   <div class="author-title">
                     {{ authorTitle }}
@@ -83,6 +76,14 @@ export default {
     type: {
       type: String,
       default: "div",
+    },
+    /**
+     * Sets dark mode to true
+     */
+    dark: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
     /**
      * I don't know what to write here
@@ -314,12 +315,9 @@ $color-nav-link-active: $color-neon-blue;
   grid-template-rows: 1fr 1fr;
 
   color: #000;
-  background: #fff;
 
   width: 100%;
   /* min-width: 450px; */
-
-  border-radius: $radius-default;
 
   & .image {
     background-position: center;
@@ -340,6 +338,11 @@ $color-nav-link-active: $color-neon-blue;
 
     padding: $space-s;
 
+    border-radius: 0 0 $radius-default $radius-default;
+
+    background-color: #101a25;
+    color: #ffffff;
+
     & .title {
       font-size: 1.5em;
       font-weight: $weight-semi-bold;
@@ -351,9 +354,18 @@ $color-nav-link-active: $color-neon-blue;
       }
     }
     & .description {
-      color: rgb(106, 106, 106);
-
+      // color: rgb(106, 106, 106);
+      color: hsl(0, 0%, 92%);
+      margin-bottom: $space-s;
       position: relative;
+
+      & .curtain {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgb(16, 26, 37));
+        bottom: 0;
+      }
     }
     & .extra {
       display: flex;
@@ -368,11 +380,11 @@ $color-nav-link-active: $color-neon-blue;
           margin-left: $space-xs;
 
           & .author-title {
-            color: #33435a;
+            color: #d2d5da;
             font-size: 0.9em;
           }
           & .author-date {
-            color: #62738c;
+            color: #8e9baf;
             font-size: 0.85em;
           }
         }
