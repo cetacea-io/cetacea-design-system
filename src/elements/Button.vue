@@ -1,22 +1,19 @@
 <template>
-  <component
-    :is="type"
-    :href="href"
-    :type="submit"
-    :class="['button', size, state, variation]">
-      <slot/>
+  <component :is="type" :href="href" :type="submit" :class="['button', size, state, variation]">
+    <slot/>
   </component>
 </template>
 
 <script>
 /**
  * Buttons are generally used for interface actions. Suitable for all-purpose use.
- * Defaults to appearance that has white background with grey border. Primary style should be used only once per view for main call-to-action.
+ * Defaults to appearance that has white background with grey border.
+ * Primary style should be used only once per view for main call-to-action.
  */
 export default {
   name: "Button",
   status: "prototype",
-  release: "1.0.0",
+  release: "3.5.0",
   props: {
     /**
      * The html element used for the button.

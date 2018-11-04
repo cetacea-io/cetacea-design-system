@@ -5,8 +5,10 @@
       :key="index"
       class="font"
       v-if="prop.category === 'font-size'"
-      :style="{ fontSize: prop.value }">
-        ${{prop.name.replace(/_/g, "-")}} <span>({{prop.value}})</span>
+      :style="{ fontSize: prop.value }"
+    >
+      ${{prop.name.replace(/_/g, "-")}}
+      <span>({{prop.value}})</span>
     </div>
   </div>
 </template>
@@ -61,6 +63,8 @@ export default {
     margin-left: 10px;
     font-weight: $weight-normal;
     color: $color-silver;
+    user-select: none;
+    font-style: normal;
   }
 }
 </style>

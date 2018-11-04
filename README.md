@@ -42,8 +42,9 @@ The tool is built on top of [Vue.js](https://vuejs.org), [Vue Styleguidist](http
 ## Examples
 
 - **[Official example](https://vueds.com/example)**
-- [Using Vue Design System as NPM dependency](https://github.com/viljamis/vue-design-system-example)
+- [Using Vue Design System as NPM dependency on Vue.js project](https://github.com/viljamis/vue-design-system-example)
 - [Using Vue Design System as NPM Dependency on Nuxt.js project](https://github.com/viljamis/nuxt-design-system)
+- [Using Vue Design System as NPM Dependency on a static website](https://github.com/viljamis/vue-design-system-example-website)
 
 ## Roadmap
 
@@ -51,7 +52,7 @@ The tool is built on top of [Vue.js](https://vuejs.org), [Vue Styleguidist](http
 
 ## Changelog
 
-- `3.5.2` is the latest release.
+- `3.5.6` is the latest release.
 - See [Releases page](https://github.com/viljamis/vue-design-system/releases) for the full changelog.
 
 ## Need more help?

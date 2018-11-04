@@ -34,7 +34,8 @@ export default {
       if (process && process.env && process.env.NODE_ENV === "test") {
         currentURL = "/example/"
       } else {
-        currentURL = window.location.pathname + window.location.hash.split("?")[0].replace(/%20/g, " ")
+        currentURL =
+          window.location.pathname + window.location.hash.split("?")[0].replace(/%20/g, " ")
       }
 
       if (sidebar) {
@@ -50,11 +51,15 @@ export default {
         const search = sidebar.querySelector("div[class^='rsg--search'] input")
         const self = this
 
-        if (currentURL && currentPage) {
-          currentPage.parentNode.classList.add("vueds-active")
-          const parent = currentPage.parentNode.parentNode.parentNode
-          if (parent.className.match(/(rsg--item)/)) {
-            currentPage.parentNode.parentNode.parentNode.classList.add("vueds-active")
+        if (currentURL) {
+          if (currentPage) {
+            currentPage.parentNode.classList.add("vueds-active")
+            const parent = currentPage.parentNode.parentNode.parentNode
+            if (parent.className.match(/(rsg--item)/)) {
+              currentPage.parentNode.parentNode.parentNode.classList.add("vueds-active")
+            }
+          } else if (currentURL === "/" && sidebar.querySelectorAll("a")[0].parentNode) {
+            sidebar.querySelectorAll("a")[0].parentNode.classList.add("vueds-active")
           }
         }
 
