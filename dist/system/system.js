@@ -1,15 +1,15 @@
 module.exports = (function(t) {
   var e = {}
-  function n(r) {
-    if (e[r]) return e[r].exports
-    var a = (e[r] = { i: r, l: !1, exports: {} })
-    return t[r].call(a.exports, a, a.exports, n), (a.l = !0), a.exports
+  function n(a) {
+    if (e[a]) return e[a].exports
+    var r = (e[a] = { i: a, l: !1, exports: {} })
+    return t[a].call(r.exports, r, r.exports, n), (r.l = !0), r.exports
   }
   return (
     (n.m = t),
     (n.c = e),
-    (n.d = function(t, e, r) {
-      n.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: r })
+    (n.d = function(t, e, a) {
+      n.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: a })
     }),
     (n.r = function(t) {
       "undefined" != typeof Symbol &&
@@ -20,17 +20,17 @@ module.exports = (function(t) {
     (n.t = function(t, e) {
       if ((1 & e && (t = n(t)), 8 & e)) return t
       if (4 & e && "object" == typeof t && t && t.__esModule) return t
-      var r = Object.create(null)
-      if ((n.r(r), Object.defineProperty(r, "default", { enumerable: !0, value: t }), 2 & e && "string" != typeof t))
-        for (var a in t)
+      var a = Object.create(null)
+      if ((n.r(a), Object.defineProperty(a, "default", { enumerable: !0, value: t }), 2 & e && "string" != typeof t))
+        for (var r in t)
           n.d(
-            r,
             a,
+            r,
             function(e) {
               return t[e]
-            }.bind(null, a)
+            }.bind(null, r)
           )
-      return r
+      return a
     }),
     (n.n = function(t) {
       var e =
@@ -53,7 +53,7 @@ module.exports = (function(t) {
   "+BkN": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var a = {
         name: "Avatar",
         status: "prototype",
         release: "1.0.0",
@@ -83,11 +83,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("LWNT"), n("KHd+")),
+      r = (n("LWNT"), n("KHd+")),
       i = n("VqCz"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this,
             e = t.$createElement,
@@ -115,7 +115,7 @@ module.exports = (function(t) {
   "/kPn": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var a = {
         name: "Button",
         status: "prototype",
         release: "1.0.0",
@@ -158,11 +158,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("qJZK"), n("KHd+")),
+      r = (n("qJZK"), n("KHd+")),
       i = n("tcIX"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this,
             e = t.$createElement
@@ -194,8 +194,8 @@ module.exports = (function(t) {
   },
   "0K1V": function(t, e, n) {
     "use strict"
-    var r = n("VOwi")
-    n.n(r).a
+    var a = n("VOwi")
+    n.n(a).a
   },
   "0xPx": function(t, e, n) {},
   "1phr": function(t, e) {},
@@ -206,16 +206,16 @@ module.exports = (function(t) {
   "4K1/": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var a = {
         name: "NotFound",
         metaInfo: { title: "Page Not Found | Vue Design System", htmlAttrs: { lang: "en" } },
         props: { type: { type: String, default: "div" } },
       },
-      a = (n("IU6l"), n("KHd+")),
+      r = (n("IU6l"), n("KHd+")),
       i = n("gkHm"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this,
             e = t.$createElement,
@@ -262,26 +262,26 @@ module.exports = (function(t) {
   "5m5j": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = []
+    var a = []
     ;[n("Xl01"), n("JtIp"), n("c1KM")].forEach(function(t) {
       t.keys().forEach(function(e) {
-        return r.push(t(e).default)
+        return a.push(t(e).default)
       })
     })
-    var a = {
+    var r = {
       install: function(t) {
-        r.forEach(function(e) {
+        a.forEach(function(e) {
           return t.component(e.name, e)
         })
       },
     }
-    "undefined" != typeof window && window.Vue && window.Vue.use(a), (e.default = a)
+    "undefined" != typeof window && window.Vue && window.Vue.use(r), (e.default = r)
   },
   "68yd": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = n("bzL3"),
-      a = {
+    var a = n("bzL3"),
+      r = {
         name: "Icon",
         status: "review",
         release: "1.0.0",
@@ -299,14 +299,14 @@ module.exports = (function(t) {
           },
         },
         data: function() {
-          return { svg: r("./" + this.name + ".svg").replace(/^<svg /, '<svg style="fill: '.concat(this.fill, '" ')) }
+          return { svg: a("./" + this.name + ".svg").replace(/^<svg /, '<svg style="fill: '.concat(this.fill, '" ')) }
         },
       },
       i = (n("c5QI"), n("KHd+")),
       s = n("1phr"),
       o = n.n(s),
       u = Object(i.a)(
-        a,
+        r,
         function() {
           var t = this,
             e = t.$createElement
@@ -334,12 +334,12 @@ module.exports = (function(t) {
   "9t9y": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = { name: "Wrapper", status: "review", release: "1.0.0", props: { type: { type: String, default: "div" } } },
-      a = (n("frqv"), n("KHd+")),
+    var a = { name: "Wrapper", status: "review", release: "1.0.0", props: { type: { type: String, default: "div" } } },
+      r = (n("frqv"), n("KHd+")),
       i = n("HpXA"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this.$createElement
           return (this._self._c || t)(this.type, { tag: "component", staticClass: "wrapper" }, [this._t("default")], 2)
@@ -359,7 +359,7 @@ module.exports = (function(t) {
   BazK: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var a = {
         name: "AvatarList",
         status: "prototype",
         release: "1.0.0",
@@ -381,11 +381,11 @@ module.exports = (function(t) {
           console.log(this.images)
         },
       },
-      a = (n("jgUD"), n("KHd+")),
+      r = (n("jgUD"), n("KHd+")),
       i = n("RUJA"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this,
             e = t.$createElement,
@@ -416,13 +416,118 @@ module.exports = (function(t) {
     "function" == typeof s.a && s()(o), (o.options.__file = "AvatarList.vue"), (e.default = o.exports)
   },
   CByH: function(t, e) {},
+  Ck4H: function(t, e, n) {
+    "use strict"
+    var a = n("l/za")
+    n.n(a).a
+  },
   DhE9: function(t, e, n) {},
   ECTP: function(t, e) {},
+  "ED+d": function(t, e) {},
+  ETfN: function(t, e, n) {
+    "use strict"
+    n.r(e)
+    var a = {
+        name: "MiniProjectCard",
+        status: "review",
+        release: "1.0.0",
+        props: {
+          type: { type: String, default: "div" },
+          dark: { type: Boolean, required: !1, default: !1 },
+          id: { type: Number, required: !0 },
+          route: { type: String, required: !0 },
+          image: { type: String, required: !0 },
+          title: { type: String, required: !0 },
+          location: { type: String, required: !1, default: "" },
+          category: { type: String, required: !0 },
+          authorImage: { type: String, required: !0 },
+          authorTitle: { type: String, required: !0 },
+          date: { type: String, required: !0 },
+          contributorsImages: { type: Array, required: !1 },
+          contributorsExtras: { type: Array, required: !1 },
+        },
+      },
+      r = (n("qBzG"), n("Ck4H"), n("KHd+")),
+      i = n("ED+d"),
+      s = n.n(i),
+      o = Object(r.a)(
+        a,
+        function() {
+          var t = this,
+            e = t.$createElement,
+            n = t._self._c || e
+          return n(
+            t.type,
+            { tag: "component", staticClass: "card" },
+            [
+              n("nuxt-link", { attrs: { to: "/projects" } }, [
+                n("div", { staticClass: "card-wrapper" }, [
+                  n("div", { staticClass: "image", style: { "background-image": "url(" + t.image + ")" } }, [
+                    n("div", { staticClass: "image-hover" }),
+                    t._v(" "),
+                    t.location
+                      ? n("div", { staticClass: "location" }, [
+                          n("i", { staticClass: "fas fa-map-marker-alt" }),
+                          t._v(" " + t._s(t.location) + "\n          "),
+                        ])
+                      : t._e(),
+                  ]),
+                  t._v(" "),
+                  n("div", { staticClass: "content" }, [
+                    n("div", { staticClass: "meta" }, [
+                      n("i", { staticClass: "fas fa-theater-masks" }),
+                      t._v(t._s(t.category) + "\n          "),
+                    ]),
+                    t._v(" "),
+                    n("div", { staticClass: "title" }, [t._v("\n            " + t._s(t.title) + "\n          ")]),
+                    t._v(" "),
+                    n("div", { staticClass: "extra" }, [
+                      n(
+                        "div",
+                        { staticClass: "author-wrapper" },
+                        [
+                          n("Avatar", { attrs: { image: t.authorImage, borderColor: "#101a25", size: "mini" } }),
+                          t._v(" "),
+                          n("div", { staticClass: "author-meta" }, [
+                            n("div", { staticClass: "author-date" }, [
+                              t._v("\n                  " + t._s(t.date) + "\n                "),
+                            ]),
+                          ]),
+                        ],
+                        1
+                      ),
+                      t._v(" "),
+                      n(
+                        "div",
+                        { staticClass: "cetaceans" },
+                        [
+                          n("AvatarList", {
+                            attrs: { images: t.contributorsImages, number: t.contributorsExtras, size: "mini" },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]),
+                ]),
+              ]),
+            ],
+            1
+          )
+        },
+        [],
+        !1,
+        null,
+        "a841b404",
+        null
+      )
+    "function" == typeof s.a && s()(o), (o.options.__file = "MiniProjectCard.vue"), (e.default = o.exports)
+  },
   FeAk: function(t, e, n) {},
   FmFd: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var a = {
         name: "Paragraph",
         status: "prototype",
         release: "1.0.0",
@@ -443,11 +548,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("jstG"), n("KHd+")),
+      r = (n("jstG"), n("KHd+")),
       i = n("ECTP"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this,
             e = t.$createElement
@@ -470,21 +575,21 @@ module.exports = (function(t) {
   INW4: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r,
-      a = n("lSNA"),
-      i = n.n(a),
+    var a,
+      r = n("lSNA"),
+      i = n.n(r),
       s = {
         name: "PositionCard",
         status: "prototype",
         release: "1.0.0",
-        props: ((r = { title: { type: Number, required: !0 }, type: { type: String, default: "Card" } }),
-        i()(r, "title", { type: String, default: null }),
-        i()(r, "description", { type: String, default: null }),
-        i()(r, "requirements", { type: String, default: null }),
-        i()(r, "time", { type: String, default: null }),
-        i()(r, "url", { type: String, default: null }),
-        i()(r, "compensation", { type: String, default: null }),
-        r),
+        props: ((a = { title: { type: Number, required: !0 }, type: { type: String, default: "Card" } }),
+        i()(a, "title", { type: String, default: null }),
+        i()(a, "description", { type: String, default: null }),
+        i()(a, "requirements", { type: String, default: null }),
+        i()(a, "time", { type: String, default: null }),
+        i()(a, "url", { type: String, default: null }),
+        i()(a, "compensation", { type: String, default: null }),
+        a),
       },
       o = (n("o7yx"), n("KHd+")),
       u = n("7dR3"),
@@ -558,41 +663,42 @@ module.exports = (function(t) {
   },
   IU6l: function(t, e, n) {
     "use strict"
-    var r = n("FeAk")
-    n.n(r).a
+    var a = n("FeAk")
+    n.n(a).a
   },
   JtIp: function(t, e, n) {
-    var r = {
+    var a = {
       "./AvatarList.vue": "BazK",
+      "./MiniProjectCard.vue": "ETfN",
       "./NavBar.vue": "nrZS",
       "./NewsSlider.vue": "mXHK",
       "./PositionCard.vue": "INW4",
       "./ProjectCard.vue": "ua5Q",
     }
-    function a(t) {
+    function r(t) {
       var e = i(t)
       return n(e)
     }
     function i(t) {
-      var e = r[t]
+      var e = a[t]
       if (e + 1) return e
       var n = new Error("Cannot find module '" + t + "'")
       throw ((n.code = "MODULE_NOT_FOUND"), n)
     }
-    ;(a.keys = function() {
-      return Object.keys(r)
+    ;(r.keys = function() {
+      return Object.keys(a)
     }),
-      (a.resolve = i),
-      ((t.exports = a).id = "JtIp")
+      (r.resolve = i),
+      ((t.exports = r).id = "JtIp")
   },
   "KHd+": function(t, e, n) {
     "use strict"
-    function r(t, e, n, r, a, i, s, o) {
+    function a(t, e, n, a, r, i, s, o) {
       var u,
         l = "function" == typeof t ? t.options : t
       if (
         (e && ((l.render = e), (l.staticRenderFns = n), (l._compiled = !0)),
-        r && (l.functional = !0),
+        a && (l.functional = !0),
         i && (l._scopeId = "data-v-" + i),
         s
           ? ((u = function(t) {
@@ -602,16 +708,16 @@ module.exports = (function(t) {
                 (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext)) ||
                 "undefined" == typeof __VUE_SSR_CONTEXT__ ||
                 (t = __VUE_SSR_CONTEXT__),
-                a && a.call(this, t),
+                r && r.call(this, t),
                 t && t._registeredComponents && t._registeredComponents.add(s)
             }),
             (l._ssrRegister = u))
-          : a &&
+          : r &&
             (u = o
               ? function() {
-                  a.call(this, this.$root.$options.shadowRoot)
+                  r.call(this, this.$root.$options.shadowRoot)
                 }
-              : a),
+              : r),
         u)
       )
         if (l.functional) {
@@ -627,7 +733,7 @@ module.exports = (function(t) {
       return { exports: t, options: l }
     }
     n.d(e, "a", function() {
-      return r
+      return a
     })
   },
   Kboc: function(t, e, n) {},
@@ -635,20 +741,20 @@ module.exports = (function(t) {
   L7ye: function(t, e) {},
   LWNT: function(t, e, n) {
     "use strict"
-    var r = n("zZoH")
-    n.n(r).a
+    var a = n("zZoH")
+    n.n(a).a
   },
   MzIM: function(t, e, n) {},
   Nqnq: function(t, e, n) {},
   ONH9: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = { name: "Tag", status: "prototype", release: "1.0.0", props: { type: { type: String, default: "span" } } },
-      a = (n("n2Va"), n("KHd+")),
+    var a = { name: "Tag", status: "prototype", release: "1.0.0", props: { type: { type: String, default: "span" } } },
+      r = (n("n2Va"), n("KHd+")),
       i = n("L7ye"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this.$createElement
           return (this._self._c || t)(this.type, { tag: "component", staticClass: "tag" }, [this._t("default")], 2)
@@ -664,20 +770,20 @@ module.exports = (function(t) {
   P91N: function(t, e, n) {},
   QOEz: function(t, e, n) {
     "use strict"
-    var r = n("Nqnq")
-    n.n(r).a
+    var a = n("Nqnq")
+    n.n(a).a
   },
   Qf7F: function(t, e, n) {
     "use strict"
-    var r = n("pAN5")
-    n.n(r).a
+    var a = n("pAN5")
+    n.n(a).a
   },
   RUJA: function(t, e) {},
   Tof5: function(t, e) {},
   UklV: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var a = {
         name: "Input",
         status: "ready",
         release: "1.0.0",
@@ -725,11 +831,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("QOEz"), n("KHd+")),
+      r = (n("QOEz"), n("KHd+")),
       i = n("7dOS"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this,
             e = t.$createElement,
@@ -763,13 +869,14 @@ module.exports = (function(t) {
   UvfI: function(t, e, n) {},
   VNqy: function(t, e, n) {
     "use strict"
-    var r = n("gS7e")
-    n.n(r).a
+    var a = n("gS7e")
+    n.n(a).a
   },
   VOwi: function(t, e, n) {},
   VqCz: function(t, e) {},
+  WNOB: function(t, e, n) {},
   Xl01: function(t, e, n) {
-    var r = {
+    var a = {
       "./Avatar.vue": "+BkN",
       "./Button.vue": "/kPn",
       "./Card.vue": "uJhq",
@@ -782,30 +889,30 @@ module.exports = (function(t) {
       "./Textarea.vue": "lK0x",
       "./Wrapper.vue": "9t9y",
     }
-    function a(t) {
+    function r(t) {
       var e = i(t)
       return n(e)
     }
     function i(t) {
-      var e = r[t]
+      var e = a[t]
       if (e + 1) return e
       var n = new Error("Cannot find module '" + t + "'")
       throw ((n.code = "MODULE_NOT_FOUND"), n)
     }
-    ;(a.keys = function() {
-      return Object.keys(r)
+    ;(r.keys = function() {
+      return Object.keys(a)
     }),
-      (a.resolve = i),
-      ((t.exports = a).id = "Xl01")
+      (r.resolve = i),
+      ((t.exports = r).id = "Xl01")
   },
   Z0DB: function(t, e, n) {
     "use strict"
-    var r = n("eUC7")
-    n.n(r).a
+    var a = n("eUC7")
+    n.n(a).a
   },
   bT9U: function(t, e, n) {},
   bzL3: function(t, e, n) {
-    var r = {
+    var a = {
       "./clock.svg": "dVsf",
       "./deprecated.svg": "/thn",
       "./handshake.svg": "l2kJ",
@@ -815,44 +922,44 @@ module.exports = (function(t) {
       "./review.svg": "eAtJ",
       "./share.svg": "vVuZ",
     }
-    function a(t) {
+    function r(t) {
       var e = i(t)
       return n(e)
     }
     function i(t) {
-      var e = r[t]
+      var e = a[t]
       if (e + 1) return e
       var n = new Error("Cannot find module '" + t + "'")
       throw ((n.code = "MODULE_NOT_FOUND"), n)
     }
-    ;(a.keys = function() {
-      return Object.keys(r)
+    ;(r.keys = function() {
+      return Object.keys(a)
     }),
-      (a.resolve = i),
-      ((t.exports = a).id = "bzL3")
+      (r.resolve = i),
+      ((t.exports = r).id = "bzL3")
   },
   c1KM: function(t, e, n) {
-    var r = { "./Index.vue": "lF/O", "./NotFound.vue": "4K1/" }
-    function a(t) {
+    var a = { "./Index.vue": "lF/O", "./NotFound.vue": "4K1/" }
+    function r(t) {
       var e = i(t)
       return n(e)
     }
     function i(t) {
-      var e = r[t]
+      var e = a[t]
       if (e + 1) return e
       var n = new Error("Cannot find module '" + t + "'")
       throw ((n.code = "MODULE_NOT_FOUND"), n)
     }
-    ;(a.keys = function() {
-      return Object.keys(r)
+    ;(r.keys = function() {
+      return Object.keys(a)
     }),
-      (a.resolve = i),
-      ((t.exports = a).id = "c1KM")
+      (r.resolve = i),
+      ((t.exports = r).id = "c1KM")
   },
   c5QI: function(t, e, n) {
     "use strict"
-    var r = n("KzwA")
-    n.n(r).a
+    var a = n("KzwA")
+    n.n(a).a
   },
   dVsf: function(t, e) {
     t.exports =
@@ -871,26 +978,27 @@ module.exports = (function(t) {
   },
   frqv: function(t, e, n) {
     "use strict"
-    var r = n("UvfI")
-    n.n(r).a
+    var a = n("UvfI")
+    n.n(a).a
   },
   gS7e: function(t, e, n) {},
   gkHm: function(t, e) {},
   jgUD: function(t, e, n) {
     "use strict"
-    var r = n("laat")
-    n.n(r).a
+    var a = n("laat")
+    n.n(a).a
   },
   jstG: function(t, e, n) {
     "use strict"
-    var r = n("0xPx")
-    n.n(r).a
+    var a = n("0xPx")
+    n.n(a).a
   },
   kWgB: function(t, e, n) {
     "use strict"
-    var r = n("bT9U")
-    n.n(r).a
+    var a = n("bT9U")
+    n.n(a).a
   },
+  "l/za": function(t, e, n) {},
   l2kJ: function(t, e) {
     t.exports =
       '<svg aria-hidden="true" data-prefix="fas" data-icon="handshake" class="svg-inline--fa fa-handshake fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M434.7 64h-85.9c-8 0-15.7 3-21.6 8.4l-98.3 90c-.1.1-.2.3-.3.4-16.6 15.6-16.3 40.5-2.1 56 12.7 13.9 39.4 17.6 56.1 2.7.1-.1.3-.1.4-.2l79.9-73.2c6.5-5.9 16.7-5.5 22.6 1 6 6.5 5.5 16.6-1 22.6l-26.1 23.9L504 313.8c2.9 2.4 5.5 5 7.9 7.7V128l-54.6-54.6c-5.9-6-14.1-9.4-22.6-9.4zM544 128.2v223.9c0 17.7 14.3 32 32 32h64V128.2h-96zm48 223.9c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM0 384h64c17.7 0 32-14.3 32-32V128.2H0V384zm48-63.9c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16c0-8.9 7.2-16 16-16zm435.9 18.6L334.6 217.5l-30 27.5c-29.7 27.1-75.2 24.5-101.7-4.4-26.9-29.4-24.8-74.9 4.4-101.7L289.1 64h-83.8c-8.5 0-16.6 3.4-22.6 9.4L128 128v223.9h18.3l90.5 81.9c27.4 22.3 67.7 18.1 90-9.3l.2-.2 17.9 15.5c15.9 13 39.4 10.5 52.3-5.4l31.4-38.6 5.4 4.4c13.7 11.1 33.9 9.1 45-4.7l9.5-11.7c11.2-13.8 9.1-33.9-4.6-45.1z"></path></svg>'
@@ -898,18 +1006,18 @@ module.exports = (function(t) {
   "lF/O": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var a = {
         name: "Index",
         status: "deprecated",
         release: "1.0.0",
         metaInfo: { title: "Vue Design System", htmlAttrs: { lang: "en" } },
         props: { type: { type: String, default: "div" } },
       },
-      a = (n("0K1V"), n("KHd+")),
+      r = (n("0K1V"), n("KHd+")),
       i = n("9I8L"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this,
             e = t.$createElement,
@@ -957,7 +1065,7 @@ module.exports = (function(t) {
   lK0x: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var a = {
         name: "Textarea",
         status: "ready",
         release: "1.0.0",
@@ -998,11 +1106,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("qQO5"), n("KHd+")),
+      r = (n("qQO5"), n("KHd+")),
       i = n("7DUr"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this,
             e = t.$createElement,
@@ -1051,7 +1159,7 @@ module.exports = (function(t) {
   mXHK: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var a = {
         name: "NewsSlider",
         status: "review",
         release: "1.0.0",
@@ -1072,11 +1180,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("sr/D"), n("oTwE"), n("KHd+")),
+      r = (n("sr/D"), n("oTwE"), n("KHd+")),
       i = n("dtxr"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this,
             e = t.$createElement,
@@ -1120,18 +1228,18 @@ module.exports = (function(t) {
   },
   n2Va: function(t, e, n) {
     "use strict"
-    var r = n("eETp")
-    n.n(r).a
+    var a = n("eETp")
+    n.n(a).a
   },
   nZfC: function(t, e, n) {
     "use strict"
-    var r = n("oXgq")
-    n.n(r).a
+    var a = n("oXgq")
+    n.n(a).a
   },
   nrZS: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var a = {
         name: "NavBar",
         status: "ready",
         release: "1.0.0",
@@ -1152,11 +1260,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("kWgB"), n("KHd+")),
+      r = (n("kWgB"), n("KHd+")),
       i = n("Tof5"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this,
             e = t.$createElement,
@@ -1164,9 +1272,9 @@ module.exports = (function(t) {
           return n(
             t.type,
             { tag: "component", staticClass: "nav" },
-            t._l(t.navItems, function(e, r) {
+            t._l(t.navItems, function(e, a) {
               return n("a", {
-                key: r,
+                key: a,
                 class: { active: t.localActive === e.component },
                 attrs: { href: e.href },
                 domProps: { innerHTML: t._s(e.name) },
@@ -1184,13 +1292,13 @@ module.exports = (function(t) {
   },
   o7yx: function(t, e, n) {
     "use strict"
-    var r = n("DhE9")
-    n.n(r).a
+    var a = n("DhE9")
+    n.n(a).a
   },
   "oIR/": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var a = {
         name: "Heading",
         status: "prototype",
         release: "1.0.0",
@@ -1204,11 +1312,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("Z0DB"), n("KHd+")),
+      r = (n("Z0DB"), n("KHd+")),
       i = n("woMB"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this.$createElement
           return (this._self._c || t)(this.level, { tag: "component", staticClass: "heading" }, [this._t("default")], 2)
@@ -1223,25 +1331,30 @@ module.exports = (function(t) {
   },
   oTwE: function(t, e, n) {
     "use strict"
-    var r = n("Kboc")
-    n.n(r).a
+    var a = n("Kboc")
+    n.n(a).a
   },
   oXgq: function(t, e, n) {},
   pAN5: function(t, e, n) {},
+  qBzG: function(t, e, n) {
+    "use strict"
+    var a = n("WNOB")
+    n.n(a).a
+  },
   qJZK: function(t, e, n) {
     "use strict"
-    var r = n("MzIM")
-    n.n(r).a
+    var a = n("MzIM")
+    n.n(a).a
   },
   qQO5: function(t, e, n) {
     "use strict"
-    var r = n("P91N")
-    n.n(r).a
+    var a = n("P91N")
+    n.n(a).a
   },
   r6ov: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var a = {
         name: "TextStyle",
         status: "ready",
         release: "1.0.0",
@@ -1262,11 +1375,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("nZfC"), n("KHd+")),
+      r = (n("nZfC"), n("KHd+")),
       i = n("7kMZ"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this,
             e = t.$createElement
@@ -1287,19 +1400,19 @@ module.exports = (function(t) {
   },
   "sr/D": function(t, e, n) {
     "use strict"
-    var r = n("wpDG")
-    n.n(r).a
+    var a = n("wpDG")
+    n.n(a).a
   },
   tcIX: function(t, e) {},
   uJhq: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = { name: "Card", status: "prototype", release: "1.0.0", props: { type: { type: String, default: "div" } } },
-      a = (n("VNqy"), n("KHd+")),
+    var a = { name: "Card", status: "prototype", release: "1.0.0", props: { type: { type: String, default: "div" } } },
+      r = (n("VNqy"), n("KHd+")),
       i = n("CByH"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this.$createElement
           return (this._self._c || t)(this.type, { tag: "component", staticClass: "card" }, [this._t("default")], 2)
@@ -1315,7 +1428,7 @@ module.exports = (function(t) {
   ua5Q: function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = {
+    var a = {
         name: "ProjectCard",
         status: "review",
         release: "1.0.0",
@@ -1343,11 +1456,11 @@ module.exports = (function(t) {
           },
         },
       },
-      a = (n("Qf7F"), n("uqNw"), n("KHd+")),
+      r = (n("Qf7F"), n("uqNw"), n("KHd+")),
       i = n("/WLx"),
       s = n.n(i),
-      o = Object(a.a)(
-        r,
+      o = Object(r.a)(
+        a,
         function() {
           var t = this,
             e = t.$createElement,
@@ -1439,8 +1552,8 @@ module.exports = (function(t) {
   },
   uqNw: function(t, e, n) {
     "use strict"
-    var r = n("8A20")
-    n.n(r).a
+    var a = n("8A20")
+    n.n(a).a
   },
   vVuZ: function(t, e) {
     t.exports =
