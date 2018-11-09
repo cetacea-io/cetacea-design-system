@@ -1,50 +1,51 @@
 <template>
   <component 
     :is="type"
+    :to="route"
+    :href="route"
     class="card">
     <!-- @mouseover="mouseOver"> -->
-    <nuxt-link to="/projects">
+    <div class="card-wrapper">
+      <div
+        :style="{ 'background-image': 'url(' + image + ')' }"
+        class="image">
 
-        <div class="card-wrapper">
-          <div
-            :style="{ 'background-image': 'url(' + image + ')' }"
-            class="image">
+        <!-- <div class="image-hover"/> -->
+        <div
+          v-if="location"
+          class="location">
+          <i class="fas fa-map-marker-alt"/> {{ location }}
+        </div>
+      </div>
 
-            <div class="image-hover"/>
-            <div
-              v-if="location"
-              class="location">
-              <i class="fas fa-map-marker-alt"/> {{ location }}
+      <div class="content">
+        <div class="meta">
+          <i class="fas fa-theater-masks"/>{{ category }}
+        </div>
+        <div class="title">
+          {{ title }}
+        </div>
+        <div class="extra">
+          <div class="author-wrapper">
+            <Avatar :image="authorImage" borderColor="#101a25" size="mini"/>
+            <div class="author-meta">
+              <div class="author-date">
+                {{ date }}
+              </div>
             </div>
           </div>
-
-          <div class="content">
-            <div class="meta">
-              <i class="fas fa-theater-masks"/>{{ category }}
-            </div>
-            <div class="title">
-              {{ title }}
-            </div>
-            <div class="extra">
-              <div class="author-wrapper">
-                <Avatar :image="authorImage" borderColor="#101a25" size="mini"/>
-                <div class="author-meta">
-                  <div class="author-date">
-                    {{ date }}
-                  </div>
-                </div>
-              </div>
-              <div class="cetaceans">
-                <AvatarList 
-                  :images="contributorsImages"
-                  :number="contributorsExtras"
-                  size="mini"
-                />
-              </div>
-            </div>
+          <div
+            v-if="contributorsImages || contributorsExtras"
+            class="cetaceans">
+            <AvatarList 
+              :images="contributorsImages"
+              :number="contributorsExtras"
+              size="mini"
+            />
           </div>
         </div>
-    </nuxt-link>
+      </div>
+    </div>
 
   </component>
 </template>
@@ -63,7 +64,11 @@ export default {
      */
     type: {
       type: String,
-      default: "div",
+      default: "nuxt-link",
+      required: false,
+      validator: value => {
+        return value.match(/(nuxt-link|a)/)
+      },
     },
     /**
      * Sets dark mode to true
@@ -78,14 +83,15 @@ export default {
      */
     id: {
       type: Number,
-      required: true,
+      required: false,
     },
     /**
      * I don't know what to write here
      */
     route: {
       type: String,
-      required: true,
+      required: false,
+      default: null,
     },
     /**
      * Image to be displayed in the Card
@@ -121,21 +127,21 @@ export default {
      */
     authorImage: {
       type: String,
-      required: true,
+      required: false,
     },
     /**
      * Name of the author
      */
     authorTitle: {
       type: String,
-      required: true,
+      required: false,
     },
     /**
      * Date of the projects
      */
     date: {
       type: String,
-      required: true,
+      required: false,
     },
     /**
      * Array of profile pictures of contributors
@@ -143,6 +149,7 @@ export default {
     contributorsImages: {
       type: Array,
       required: false,
+      default: null,
     },
     /**
      * Number of extras in the contributors
@@ -150,6 +157,7 @@ export default {
     contributorsExtras: {
       type: Array,
       required: false,
+      default: null,
     },
   },
 }
@@ -297,7 +305,7 @@ $color-nav-link-active: $color-neon-blue;
     display: grid;
     grid-template-rows: auto 1fr auto;
 
-    padding: $space-xs $space-s $space-s $space-s;
+    padding: $space-xs $space-s;
 
     border-radius: 0 0 $radius-default $radius-default;
 
@@ -361,11 +369,6 @@ $color-nav-link-active: $color-neon-blue;
     category="Musica"
     authorImage="http://www.ultimasnoticiasenred.com.mx/wp-content/uploads/2016/04/don-ramon.jpg"
     date="6 de Junio"
-    :contributorsImages="[
-      'https://romalive.files.wordpress.com/2016/07/0.jpg?w=720',
-      'https://secure.i.telegraph.co.uk/multimedia/archive/02668/Gabriel_2668021b.jpg'
-    ]"
-    :contributorsExtras="12"
   />
   ```
 </docs>

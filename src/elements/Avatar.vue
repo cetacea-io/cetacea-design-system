@@ -60,8 +60,8 @@ export default {
 
 <style lang="scss" scoped>
 .is-mini {
-  width: 20px !important;
-  height: 20px !important;
+  width: 30px !important;
+  height: 30px !important;
 
   font-size: 12px !important;
 }
