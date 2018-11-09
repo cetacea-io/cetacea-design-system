@@ -161,8 +161,8 @@ export default {
   },
   computed: {
     thingsProps() {
-      if (this.type == "nuxt-link") return { to: this.to }
-      else if (this.type == "a") return { href: this.href }
+      if (this.type == "nuxt-link") return { to: this.route }
+      else if (this.type == "a") return { href: this.route }
     },
   },
 }
@@ -375,7 +375,8 @@ $color-nav-link-active: $color-neon-blue;
     category="Musica"
     authorImage="http://www.ultimasnoticiasenred.com.mx/wp-content/uploads/2016/04/don-ramon.jpg"
     date="6 de Junio"
-    to="https://google.com"
+    route="https://google.com"
+    type="a"
   />
   ```
 </docs>

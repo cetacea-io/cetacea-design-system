@@ -203,6 +203,7 @@ module.exports = (function(t) {
     t.exports =
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zM238.1 177.9L102.4 313.6l-6.3 57.1c-.8 7.6 5.6 14.1 13.3 13.3l57.1-6.3L302.2 242c2.3-2.3 2.3-6.1 0-8.5L246.7 178c-2.5-2.4-6.3-2.4-8.6-.1zM345 165.1L314.9 135c-9.4-9.4-24.6-9.4-33.9 0l-23.1 23.1c-2.3 2.3-2.3 6.1 0 8.5l55.5 55.5c2.3 2.3 6.1 2.3 8.5 0L345 199c9.3-9.3 9.3-24.5 0-33.9z"/></svg>'
   },
+  "3R78": function(t, e, n) {},
   "4K1/": function(t, e, n) {
     "use strict"
     n.r(e)
@@ -356,11 +357,6 @@ module.exports = (function(t) {
     t.exports =
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" class="st1"/></svg>'
   },
-  Akza: function(t, e, n) {
-    "use strict"
-    var r = n("nF4X")
-    n.n(r).a
-  },
   BazK: function(t, e, n) {
     "use strict"
     n.r(e)
@@ -455,11 +451,11 @@ module.exports = (function(t) {
         },
         computed: {
           thingsProps: function() {
-            return "nuxt-link" == this.type ? { to: this.to } : "a" == this.type ? { href: this.href } : void 0
+            return "nuxt-link" == this.type ? { to: this.route } : "a" == this.type ? { href: this.route } : void 0
           },
         },
       },
-      a = (n("Akza"), n("sEro"), n("KHd+")),
+      a = (n("Uqs4"), n("OdwS"), n("KHd+")),
       i = n("ED+d"),
       s = n.n(i),
       o = Object(a.a)(
@@ -523,7 +519,7 @@ module.exports = (function(t) {
         [],
         !1,
         null,
-        "79f4ff13",
+        "5ed71823",
         null
       )
     "function" == typeof s.a && s()(o), (o.options.__file = "MiniProjectCard.vue"), (e.default = o.exports)
@@ -746,6 +742,7 @@ module.exports = (function(t) {
   L7ye: function(t, e) {},
   M0dr: function(t, e, n) {},
   MzIM: function(t, e, n) {},
+  N7zo: function(t, e, n) {},
   Nqnq: function(t, e, n) {},
   ONH9: function(t, e, n) {
     "use strict"
@@ -767,6 +764,11 @@ module.exports = (function(t) {
         null
       )
     "function" == typeof s.a && s()(o), (o.options.__file = "Tag.vue"), (e.default = o.exports)
+  },
+  OdwS: function(t, e, n) {
+    "use strict"
+    var r = n("N7zo")
+    n.n(r).a
   },
   P91N: function(t, e, n) {},
   QOEz: function(t, e, n) {
@@ -867,6 +869,11 @@ module.exports = (function(t) {
       )
     "function" == typeof s.a && s()(o), (o.options.__file = "Input.vue"), (e.default = o.exports)
   },
+  Uqs4: function(t, e, n) {
+    "use strict"
+    var r = n("3R78")
+    n.n(r).a
+  },
   UvfI: function(t, e, n) {},
   VNqy: function(t, e, n) {
     "use strict"
@@ -905,7 +912,6 @@ module.exports = (function(t) {
       (a.resolve = i),
       ((t.exports = a).id = "Xl01")
   },
-  "XtH/": function(t, e, n) {},
   Z0DB: function(t, e, n) {
     "use strict"
     var r = n("eUC7")
@@ -1231,7 +1237,6 @@ module.exports = (function(t) {
     var r = n("eETp")
     n.n(r).a
   },
-  nF4X: function(t, e, n) {},
   nZfC: function(t, e, n) {
     "use strict"
     var r = n("oXgq")
@@ -1393,11 +1398,6 @@ module.exports = (function(t) {
         null
       )
     "function" == typeof s.a && s()(o), (o.options.__file = "TextStyle.vue"), (e.default = o.exports)
-  },
-  sEro: function(t, e, n) {
-    "use strict"
-    var r = n("XtH/")
-    n.n(r).a
   },
   "sr/D": function(t, e, n) {
     "use strict"
