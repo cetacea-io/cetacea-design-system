@@ -1,8 +1,7 @@
 <template>
   <component 
+    v-bind="thingsProps"
     :is="type"
-    :to="route"
-    :href="route"
     class="card">
     <!-- @mouseover="mouseOver"> -->
     <div class="card-wrapper">
@@ -160,6 +159,12 @@ export default {
       default: null,
     },
   },
+  computed: {
+    thingsProps() {
+      if (this.type == "nuxt-link") return { to: this.to }
+      else if (this.type == "a") return { href: this.href }
+    },
+  },
 }
 </script>
 
@@ -226,6 +231,7 @@ $color-nav-link-active: $color-neon-blue;
   position: relative;
   display: inline-block;
   font-family: $font-text;
+  text-decoration: none;
 
   &:hover {
     & .image-hover {
@@ -369,6 +375,7 @@ $color-nav-link-active: $color-neon-blue;
     category="Musica"
     authorImage="http://www.ultimasnoticiasenred.com.mx/wp-content/uploads/2016/04/don-ramon.jpg"
     date="6 de Junio"
+    to="https://google.com"
   />
   ```
 </docs>

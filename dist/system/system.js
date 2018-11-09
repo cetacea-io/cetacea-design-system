@@ -356,6 +356,11 @@ module.exports = (function(t) {
     t.exports =
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" class="st1"/></svg>'
   },
+  Akza: function(t, e, n) {
+    "use strict"
+    var r = n("nF4X")
+    n.n(r).a
+  },
   BazK: function(t, e, n) {
     "use strict"
     n.r(e)
@@ -448,8 +453,13 @@ module.exports = (function(t) {
           contributorsImages: { type: Array, required: !1, default: null },
           contributorsExtras: { type: Array, required: !1, default: null },
         },
+        computed: {
+          thingsProps: function() {
+            return "nuxt-link" == this.type ? { to: this.to } : "a" == this.type ? { href: this.href } : void 0
+          },
+        },
       },
-      a = (n("cuKU"), n("UKy3"), n("KHd+")),
+      a = (n("Akza"), n("sEro"), n("KHd+")),
       i = n("ED+d"),
       s = n.n(i),
       o = Object(a.a)(
@@ -458,7 +468,7 @@ module.exports = (function(t) {
           var t = this,
             e = t.$createElement,
             n = t._self._c || e
-          return n(t.type, { tag: "component", staticClass: "card", attrs: { to: t.route, href: t.route } }, [
+          return n(t.type, t._b({ tag: "component", staticClass: "card" }, "component", t.thingsProps, !1), [
             n("div", { staticClass: "card-wrapper" }, [
               n("div", { staticClass: "image", style: { "background-image": "url(" + t.image + ")" } }, [
                 t.location
@@ -513,7 +523,7 @@ module.exports = (function(t) {
         [],
         !1,
         null,
-        "7ea78bb2",
+        "79f4ff13",
         null
       )
     "function" == typeof s.a && s()(o), (o.options.__file = "MiniProjectCard.vue"), (e.default = o.exports)
@@ -759,8 +769,6 @@ module.exports = (function(t) {
     "function" == typeof s.a && s()(o), (o.options.__file = "Tag.vue"), (e.default = o.exports)
   },
   P91N: function(t, e, n) {},
-  QDrM: function(t, e, n) {},
-  QEKW: function(t, e, n) {},
   QOEz: function(t, e, n) {
     "use strict"
     var r = n("Nqnq")
@@ -773,11 +781,6 @@ module.exports = (function(t) {
   },
   RUJA: function(t, e) {},
   Tof5: function(t, e) {},
-  UKy3: function(t, e, n) {
-    "use strict"
-    var r = n("QDrM")
-    n.n(r).a
-  },
   UklV: function(t, e, n) {
     "use strict"
     n.r(e)
@@ -902,6 +905,7 @@ module.exports = (function(t) {
       (a.resolve = i),
       ((t.exports = a).id = "Xl01")
   },
+  "XtH/": function(t, e, n) {},
   Z0DB: function(t, e, n) {
     "use strict"
     var r = n("eUC7")
@@ -956,11 +960,6 @@ module.exports = (function(t) {
   c5QI: function(t, e, n) {
     "use strict"
     var r = n("KzwA")
-    n.n(r).a
-  },
-  cuKU: function(t, e, n) {
-    "use strict"
-    var r = n("QEKW")
     n.n(r).a
   },
   dVsf: function(t, e) {
@@ -1232,6 +1231,7 @@ module.exports = (function(t) {
     var r = n("eETp")
     n.n(r).a
   },
+  nF4X: function(t, e, n) {},
   nZfC: function(t, e, n) {
     "use strict"
     var r = n("oXgq")
@@ -1393,6 +1393,11 @@ module.exports = (function(t) {
         null
       )
     "function" == typeof s.a && s()(o), (o.options.__file = "TextStyle.vue"), (e.default = o.exports)
+  },
+  sEro: function(t, e, n) {
+    "use strict"
+    var r = n("XtH/")
+    n.n(r).a
   },
   "sr/D": function(t, e, n) {
     "use strict"
