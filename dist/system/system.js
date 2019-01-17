@@ -76,10 +76,10 @@ module.exports = (function(t) {
             return "large" == this.size
               ? "is-large"
               : "icon" == this.size
-                ? "is-icon"
-                : "mini" == this.size
-                  ? "is-mini"
-                  : void 0
+              ? "is-icon"
+              : "mini" == this.size
+              ? "is-mini"
+              : void 0
           },
         },
       },
@@ -263,20 +263,21 @@ module.exports = (function(t) {
   "5m5j": function(t, e, n) {
     "use strict"
     n.r(e)
-    var r = []
-    ;[n("Xl01"), n("JtIp"), n("c1KM")].forEach(function(t) {
+    var r = [n("Xl01"), n("JtIp"), n("c1KM")],
+      a = []
+    r.forEach(function(t) {
       t.keys().forEach(function(e) {
-        return r.push(t(e).default)
+        return a.push(t(e).default)
       })
     })
-    var a = {
+    var i = {
       install: function(t) {
-        r.forEach(function(e) {
+        a.forEach(function(e) {
           return t.component(e.name, e)
         })
       },
     }
-    "undefined" != typeof window && window.Vue && window.Vue.use(a), (e.default = a)
+    "undefined" != typeof window && window.Vue && window.Vue.use(i), (e.default = i)
   },
   "68yd": function(t, e, n) {
     "use strict"
@@ -417,7 +418,6 @@ module.exports = (function(t) {
     "function" == typeof s.a && s()(o), (o.options.__file = "AvatarList.vue"), (e.default = o.exports)
   },
   CByH: function(t, e) {},
-  DhE9: function(t, e, n) {},
   ECTP: function(t, e) {},
   "ED+d": function(t, e) {},
   ETfN: function(t, e, n) {
@@ -588,11 +588,10 @@ module.exports = (function(t) {
         i()(r, "description", { type: String, default: null }),
         i()(r, "requirements", { type: String, default: null }),
         i()(r, "time", { type: String, default: null }),
-        i()(r, "url", { type: String, default: null }),
         i()(r, "compensation", { type: String, default: null }),
         r),
       },
-      o = (n("o7yx"), n("KHd+")),
+      o = (n("mWPt"), n("KHd+")),
       u = n("7dR3"),
       l = n.n(u),
       c = Object(o.a)(
@@ -647,9 +646,18 @@ module.exports = (function(t) {
               t._v(" "),
               n("div", { staticClass: "block" }, [n("AvatarList")], 1),
               t._v(" "),
-              n("Button", { staticClass: "position-button", attrs: { type: "a", href: t.url } }, [
-                t._v("\n    Me interesa\n  "),
-              ]),
+              n(
+                "Button",
+                {
+                  staticClass: "position-button",
+                  nativeOn: {
+                    click: function(e) {
+                      t.$emit("clicked")
+                    },
+                  },
+                },
+                [t._v("\n    Me interesa\n  ")]
+              ),
             ],
             1
           )
@@ -657,7 +665,7 @@ module.exports = (function(t) {
         [],
         !1,
         null,
-        "606c6836",
+        "a1b7a732",
         null
       )
     "function" == typeof l.a && l()(c), (c.options.__file = "PositionCard.vue"), (e.default = c.exports)
@@ -912,6 +920,7 @@ module.exports = (function(t) {
       (a.resolve = i),
       ((t.exports = a).id = "Xl01")
   },
+  "Z+SA": function(t, e, n) {},
   Z0DB: function(t, e, n) {
     "use strict"
     var r = n("eUC7")
@@ -1162,6 +1171,11 @@ module.exports = (function(t) {
     }
   },
   laat: function(t, e, n) {},
+  mWPt: function(t, e, n) {
+    "use strict"
+    var r = n("Z+SA")
+    n.n(r).a
+  },
   mXHK: function(t, e, n) {
     "use strict"
     n.r(e)
@@ -1285,7 +1299,8 @@ module.exports = (function(t) {
                 attrs: { href: e.href },
                 domProps: { innerHTML: t._s(e.name) },
               })
-            })
+            }),
+            0
           )
         },
         [],
@@ -1295,11 +1310,6 @@ module.exports = (function(t) {
         null
       )
     "function" == typeof s.a && s()(o), (o.options.__file = "NavBar.vue"), (e.default = o.exports)
-  },
-  o7yx: function(t, e, n) {
-    "use strict"
-    var r = n("DhE9")
-    n.n(r).a
   },
   "oIR/": function(t, e, n) {
     "use strict"

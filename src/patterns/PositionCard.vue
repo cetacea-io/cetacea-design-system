@@ -1,37 +1,24 @@
 <template>
-  <component 
-    :is="type"
-    class="position-wrapper">
+  <component :is="type" class="position-wrapper">
     <div class="title">{{ title }}</div>
-    <div
-      v-if="time"
-      class="time">
-        <Icon class="clock-icon" name="clock" size="small"/>
-        <span>{{ time }}</span>
+    <div v-if="time" class="time">
+      <Icon class="clock-icon" name="clock" size="small" />
+      <span>{{ time }}</span>
     </div>
-    <div
-      v-if="compensation"
-      class="time">
-        <Icon class="clock-icon" name="handshake" size="small"/>
-        <span>{{ compensation }}</span>
+    <div v-if="compensation" class="time">
+      <Icon class="clock-icon" name="handshake" size="small" />
+      <span>{{ compensation }}</span>
     </div>
     <div class="block">
-      <div class="subtitle"> Descripción de puesto </div>
+      <div class="subtitle">Descripción de puesto</div>
       <div>{{ description }}</div>
     </div>
     <div class="block">
       <div class="subtitle">Requisitos</div>
       <div>{{ requirements }}</div>
     </div>
-    <div class="block">
-      <AvatarList/>
-    </div>
-    <Button
-    type="a"
-    :href="url"
-    class="position-button">
-      Me interesa
-    </Button>
+    <div class="block"><AvatarList /></div>
+    <Button @click.native="$emit('clicked')" class="position-button"> Me interesa </Button>
   </component>
 </template>
 
@@ -70,10 +57,6 @@ export default {
       default: null,
     },
     time: {
-      type: String,
-      default: null,
-    },
-    url: {
       type: String,
       default: null,
     },
@@ -118,7 +101,6 @@ export default {
 }
 </style>
 
-
 <docs>
   ```jsx
   <div>
@@ -129,7 +111,6 @@ export default {
       description="Programador en C# que sepa Unity para unirse al equipo de desarrollo"
       requirements="Haber concluido por lo menos dos proyectos de cetacea"
       compensation="$2,000"
-      url="https://www.youtube.com"
     />
   </div>
   ```
