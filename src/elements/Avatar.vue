@@ -1,13 +1,6 @@
 <template>
-  <component
-    :is="type"
-    :style="{ 'background-image': 'url(' + image + ')', 'border-color': this.borderColor }"
-    :class="getSize"
-    class="avatar">
-    <span 
-      v-if="number">
-    +{{ number }}
-    </span>
+  <component :is="type" :style="{ 'background-image': 'url(' + image + ')' }" :class="getSize" class="avatar">
+    <span v-if="number"> +{{ number }} </span>
   </component>
 </template>
 
@@ -30,11 +23,6 @@ export default {
       type: Number,
       required: false,
       default: null,
-    },
-    borderColor: {
-      type: String,
-      required: false,
-      default: "#FFFFFF",
     },
     /**
      * Size of the icon
@@ -105,12 +93,13 @@ export default {
 
   border-width: 3px;
   border-style: solid;
+  border-color: transparent;
+  background-clip: padding-box;
 
   width: 40px;
   height: 40px;
 }
 </style>
-
 
 <docs>
   ```jsx
